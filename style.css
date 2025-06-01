@@ -49,6 +49,7 @@ header img {
 }
 
 h1 {
+    text-align: center;
     color: #1e90ff;
     font-size: 2.5rem;
     margin-bottom: 4rem;
@@ -112,5 +113,47 @@ html, body {
 
 main {
     flex: 1;
+}
+
+#formAviso {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  display: flex;
+  gap: 5px;
+  background: #101014;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+
+#listaAvisos {
+  display: flex;
+  flex-direction: column;     
+  align-items: center;        
+  gap: 15px;                  
+  margin-top: 60px;
+  padding: 20px;
+  list-style: none;
+}
+
+#listaAvisos li {
+  background-color: #101014;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 80%;                
+  max-width: 500px;
+  text-align: center;
+}
+
+#buttonAviso{
+    background-color:#1e90ff;
+}
+
+input{
+    background-color: #101014;
+    color: #1e90ff
 }
 
