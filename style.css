@@ -103,10 +103,6 @@ footer a {
   transition: color 0.3s;
 }
 
-footer a:hover {
-  color: #63b3ed;
-}
-
 footer img {
   width: 40px;
   height: 40px;
