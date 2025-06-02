@@ -62,6 +62,7 @@ h2 {
 
 main {
     padding: 2rem;
+    flex: 1;
 }
 
 section {
@@ -111,10 +112,6 @@ html, body {
     flex-direction: column;
 }
 
-main {
-    flex: 1;
-}
-
 #formAviso {
   position: fixed;
   bottom: 100px;
@@ -140,9 +137,8 @@ main {
 
 #listaAvisos li {
   background-color: #101014;
-  padding: 15px 20px;
+  padding: 70px 10px;
   border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   width: 80%;                
   max-width: 500px;
   text-align: center;
@@ -156,4 +152,3 @@ input{
     background-color: #101014;
     color: #1e90ff
 }
-
