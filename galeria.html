@@ -31,35 +31,14 @@
   </nav>
   
   <main>
-    <h1>Mural de Avisos</h1>
-    
-    <ul id="listaAvisos"></ul>
-  
-    <form id="formAviso">
-       <input type="text" id="inputAviso" placeholder="Adicione um aviso" required>
-       <button type="submit" id="buttonAviso">Adicionar</button>
-    </form>
+    <h1>Galeria</h1>
   </main>
+	
   <footer>
     <p>Contato | Créditos | Redes Sociais</p>
   </footer>
 
   <script>
-	const lista = document.getElementById("listaAvisos");
-    const form = document.getElementById("formAviso");
-    const input = document.getElementById("inputAviso");
-    
-    form.addEventListener('submit', function(e){
-      e.preventDefault();
-
-      const aviso = input.value;
-
-      const itemLista = document.createElement('li');
-      itemLista.textContent = aviso;
-
-      lista.append(itemLista);
-      }; 
-    });
   </script>
 </body>
 </html>
