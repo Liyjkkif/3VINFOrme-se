@@ -119,27 +119,30 @@
 </footer>
 
 <script>
-      
-const track = document.querySelector('.carousel-track');
-const prevButton = document.querySelector('.carousel-btn.prev');
-const nextButton = document.querySelector('.carousel-btn.next');
+  var carousels = document.querySelectorAll('.carousel');
 
-let currentIndex = 0;
+  carousels.forEach(function(carousel) {
+    var track = carousel.querySelector('.carousel-track');
+    var prevButton = carousel.querySelector('.carousel-btn.prev');
+    var nextButton = carousel.querySelector('.carousel-btn.next');
+    var items = carousel.querySelectorAll('.carousel-item');
 
-nextButton.addEventListener('click', () => {
-  const items = document.querySelectorAll('.carousel-item');
-  if (currentIndex < items.length - 1) {
-    currentIndex++;
-    track.style.transform = `translateX(-${currentIndex * 300}px)`;
-  }
-});
+    var currentIndex = 0;
 
-prevButton.addEventListener('click', () => {
-  if (currentIndex > 0) {
-    currentIndex--;
-    track.style.transform = `translateX(-${currentIndex * 300}px)`;
-  }
-});
+    nextButton.addEventListener('click', function() {
+      if (currentIndex < items.length - 1) {
+        currentIndex++;
+        track.style.transform = 'translateX(-' + (currentIndex * 300) + 'px)';
+      }
+    });
+
+    prevButton.addEventListener('click', function() {
+      if (currentIndex > 0) {
+        currentIndex--;
+        track.style.transform = 'translateX(-' + (currentIndex * 300) + 'px)';
+      }
+    });
+  });
 </script>
 </body>
 </html>
