@@ -42,18 +42,18 @@
 
   <script>
 	const lista = document.getElementById("listaAvisos");
-    const form = document.getElementById("formAviso");
-    const input = document.getElementById("inputAviso");
+	const form = document.getElementById("formAviso");
+	const input = document.getElementById("inputAviso");
     
-    form.addEventListener('submit', function(e){
-      e.preventDefault();
-
-      const aviso = input.value;
-
-      const itemLista = document.createElement('li');
-      itemLista.textContent = aviso;
-
-      lista.append(itemLista);
+	form.addEventListener('submit', function(e){
+	e.preventDefault();
+	
+	const aviso = input.value;
+	
+	const itemLista = document.createElement('li');
+	itemLista.textContent = aviso;
+	
+	lista.append(itemLista);
       }; 
     });
   </script>
