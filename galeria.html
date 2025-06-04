@@ -10,7 +10,46 @@
 <style>
    h2{
     text-align: center;
+   }
+   
+   .carousel {
+  position: relative;
+  width: 300px;
+  overflow: hidden;
 }
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 300px;
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
 </style>
 
   <nav>
@@ -34,22 +73,73 @@
   
   <main>
     <h1>Galeria</h1>  
-
-     <div class="carrossel">
-      <button id="prev">&#10094;</button>
-      <div class="slides">
-        <div class="slide"><img src="" alt="Imagem 1"></div>
-        <div class="slide"><img src="" alt="Imagem 2"></div>
-        <div class="slide"><img src="" alt="Imagem 3"></div>
-      </div>
-      <button id="next">&#10095;</button>
-    </div>
-  </main>	
-  <footer>
+     
+     <section>
+       <h2>2025</h2>
+         <div class="carousel">
+           <div class="carousel-track">
+              <div class="carousel-item"><img src="" alt="Img1"></div>
+              <div class="carousel-item"><img src="" alt="Img2"></div>
+              <div class="carousel-item"><img src="" alt="Img3"></div>
+           </div>
+           <button class="carousel-btn prev">◀</button>
+           <button class="carousel-btn next">▶</button>
+         </div>
+     </section>
+     
+     <section>
+       <h2>2024</h2>
+         <div class="carousel">
+           <div class="carousel-track">
+              <div class="carousel-item"><img src="" alt="Img1"></div>
+              <div class="carousel-item"><img src="" alt="Img2"></div>
+              <div class="carousel-item"><img src="" alt="Img3"></div>
+           </div>
+           <button class="carousel-btn prev">◀</button>
+           <button class="carousel-btn next">▶</button>
+         </div>
+     </section>
+     
+     <section>
+       <h2>2023</h2>
+         <div class="carousel">
+           <div class="carousel-track">
+              <div class="carousel-item"><img src="" alt="Img1"></div>
+              <div class="carousel-item"><img src="" alt="Img2"></div>
+              <div class="carousel-item"><img src="" alt="Img3"></div>
+           </div>
+           <button class="carousel-btn prev">◀</button>
+           <button class="carousel-btn next">▶</button>
+         </div>
+     </section>
+           
+</main>	
+<footer>
     <p>Contato | Créditos | Redes Sociais</p>
-  </footer>
+</footer>
 
-  <script>
-  </script>
+<script>
+      
+const track = document.querySelector('.carousel-track');
+const prevButton = document.querySelector('.carousel-btn.prev');
+const nextButton = document.querySelector('.carousel-btn.next');
+
+let currentIndex = 0;
+
+nextButton.addEventListener('click', () => {
+  const items = document.querySelectorAll('.carousel-item');
+  if (currentIndex < items.length - 1) {
+    currentIndex++;
+    track.style.transform = `translateX(-${currentIndex * 300}px)`;
+  }
+});
+
+prevButton.addEventListener('click', () => {
+  if (currentIndex > 0) {
+    currentIndex--;
+    track.style.transform = `translateX(-${currentIndex * 300}px)`;
+  }
+});
+</script>
 </body>
 </html>
