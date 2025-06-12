@@ -150,14 +150,8 @@ input {
   color: #1e90ff;
 }
 
- #eventos {
-  padding: 20px;
-  max-width: 800px;
-  margin: auto;
-}
-
 .evento {
-  background: #f0f8ff;
+  background: #111;
   padding: 15px;
   margin: 30px;
   border-radius: 8px;
