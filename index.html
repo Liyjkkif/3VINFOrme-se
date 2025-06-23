@@ -5,6 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .card {
+          background-color: #252525;
+          padding: 30px;
+          margin: 20px auto;
+          border-radius: 10px;
+          max-width: 700px;
+          border-left: 5px solid #1e90ff;
+          transition: transform 0.3s;
+        }
+        
+        .card h2 {
+          margin-bottom: 10px;
+          color: #1e90ff;
+        }
+        
+        .card p {
+          color: #ddd;
+        }
+    </style>
 </head>
 <body> 
   <nav>
@@ -19,30 +39,41 @@
     </ul>
   </nav>
 
-  <main>
+   <main>
     <h1>GUIA DA TURMA</h1>
-    <p>Lorem Ipsum</p>
-    
-    <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-   </p>
-    
-    <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <p style="text-align: center; margin-bottom: 2rem;">
+      Bem-vindo(a) ao portal da nossa turma! Aqui você encontra tudo que precisa: informações, eventos, materiais e muito mais.
     </p>
-    
-    <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+
+    <section class="card">
+      <h2>Eventos</h2>
+      <p>Confira os próximos eventos, atividades e datas importantes da turma.</p>
+    </section>
+
+    <section class="card">
+      <h2>Galeria</h2>
+      <p>Veja fotos dos melhores momentos da nossa trajetória, festas, encontros e eventos.</p>
+    </section>
+
+    <section class="card">
+      <h2>Integrantes</h2>
+      <p>Conheça todos os membros da turma! Saiba quem somos, nossos interesses e contatos.</p>
+    </section>
+
+    <section class="card">
+      <h2>Materiais</h2>
+      <p>Acesse apostilas, documentos, PDFs e materiais de estudo organizados especialmente para a turma.</p>
+    </section>
+
+    <section class="card">
+      <h2>Mural</h2>
+      <p>Fique por dentro dos comunicados, avisos e recados importantes postados no mural da turma.</p>
+    </section>
+
+    <section class="card">
+      <h2>Calendário</h2>
+      <p>Consulte o calendário acadêmico com todas as datas, feriados e eventos do semestre.</p>
+    </section>
   </main>
 
   <footer>
