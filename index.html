@@ -1,89 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .card {
-          background-color: #252525;
-          padding: 30px;
-          margin: 20px auto;
-          border-radius: 10px;
-          max-width: 700px;
-          border-left: 5px solid #1e90ff;
-          transition: transform 0.3s;
-        }
-        
-        .card h2 {
-          margin-bottom: 10px;
-          color: #1e90ff;
-        }
-        
-        .card p {
-          color: #ddd;
-        }
-    </style>
-</head>
-<body> 
-  <nav>
-    <ul class="nav">
-      <li><a href="index.html">Início</a></li>
-      <li><a href="integrantes.html">Integrantes</a></li>
-      <li><a href="galeria.html">Galeria</a></li>
-      <li><a href="materiais.html">Materiais</a></li>
-      <li><a href="mange.html">Mange</a></li>
-      <li><a href="eventos.html">Eventos</a></li>
-      <li><a href="mural.html">Mural</a></li>
-    </ul>
-  </nav>
 
-   <main>
-    <h1>GUIA DA TURMA</h1>
-    <p style="text-align: center; margin-bottom: 2rem;">
-      Bem-vindo(a) ao portal da nossa turma! Aqui você encontra tudo que precisa: informações, eventos, materiais e muito mais.
-    </p>
-
-    <section class="card">
-      <h2>Eventos</h2>
-      <p>Confira os próximos eventos, atividades e datas importantes da turma.</p>
-    </section>
-
-    <section class="card">
-      <h2>Galeria</h2>
-      <p>Veja fotos dos melhores momentos da nossa trajetória, festas, encontros e eventos.</p>
-    </section>
-
-    <section class="card">
-      <h2>Integrantes</h2>
-      <p>Conheça todos os membros da turma! Saiba quem somos, nossos interesses e contatos.</p>
-    </section>
-
-    <section class="card">
-      <h2>Materiais</h2>
-      <p>Acesse apostilas, documentos, PDFs e materiais de estudo organizados especialmente para a turma.</p>
-    </section>
-
-    <section class="card">
-      <h2>Mural</h2>
-      <p>Fique por dentro dos comunicados, avisos e recados importantes postados no mural da turma.</p>
-    </section>
-
-    <section class="card">
-      <h2>Calendário</h2>
-      <p>Consulte o calendário acadêmico com todas as datas, feriados e eventos do semestre.</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>Contato | Créditos | Redes Sociais</p>
-  </footer>
-  <script src="script.js"></script>  
-</body>
-</html> 
-
-<!--
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -104,13 +19,13 @@
     <div class="container mx-auto flex items-center justify-between p-4">
       <h1 class="text-2xl font-bold text-blue-600">Guia da Turma</h1>
       <ul class="flex gap-6">
-        <li><a href="#inicio" class="hover:text-blue-500">Início</a></li>
-        <li><a href="#integrantes" class="hover:text-blue-500">Integrantes</a></li>
-        <li><a href="#galeria" class="hover:text-blue-500">Galeria</a></li>
-        <li><a href="#materiais" class="hover:text-blue-500">Materiais</a></li>
-        <li><a href="#mange" class="hover:text-blue-500">Mange</a></li>
-        <li><a href="#eventos" class="hover:text-blue-500">Eventos</a></li>
-        <li><a href="#mural" class="hover:text-blue-500">Mural</a></li>
+        <li><a href="inicio.html" class="hover:text-blue-500">Início</a></li>
+        <li><a href="integrantes.html" class="hover:text-blue-500">Integrantes</a></li>
+        <li><a href="galeria.html" class="hover:text-blue-500">Galeria</a></li>
+        <li><a href="materiais.html" class="hover:text-blue-500">Materiais</a></li>
+        <li><a href="mange.html" class="hover:text-blue-500">Mange</a></li>
+        <li><a href="eventos.html" class="hover:text-blue-500">Eventos</a></li>
+        <li><a href="mural.html" class="hover:text-blue-500">Mural</a></li>
       </ul>
     </div>
   </nav>
@@ -120,10 +35,10 @@
       <div class="flex-1 mb-8 md:mb-0">
         <h2 class="text-5xl font-bold mb-4 text-white">Bem-vindos ao Guia da Turma!</h2>
         <p class="text-white mb-6">Aqui você encontra tudo sobre nossa turma: materiais, eventos, mural de avisos, calendário e muito mais.</p>
-        <a href="#mural" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100">Ver mural</a>
+        <a href="mural.html" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100">Ver mural</a>
       </div>
       <div class="flex-1">
-        <img src="hero.png" alt="Imagem Turma" class="rounded-lg shadow-lg">
+        <img src="turma.jpg" alt="Imagem Turma" class="rounded-lg shadow-lg">
       </div>
     </div>
   </section>
@@ -135,38 +50,38 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
 
         <div class="flex items-center">
-          <img src="galeria.png" alt="Galeria" class="w-1/2 rounded-lg shadow-lg">
+          <img src="" alt="Galeria" class="w-1/2 rounded-lg shadow-lg">
           <div class="ml-6">
             <h4 class="text-2xl font-bold mb-2">Galeria</h4>
-            <p class="mb-4">Veja fotos e registros dos nossos momentos juntos na sala e nos eventos.</p>
-            <a href="#galeria" class="text-blue-600 hover:underline">Acessar Galeria →</a>
+            <p class="mb-4">Veja registros dos nossos momentos juntos na sala, eventos e aulas de campo.</p>
+            <a href="galeria.html" class="text-blue-600 hover:underline">Acessar Galeria →</a>
           </div>
         </div>
 
         <div class="flex items-center flex-row-reverse">
-          <img src="materiais.png" alt="Materiais" class="w-1/2 rounded-lg shadow-lg">
+          <img src="" alt="Materiais" class="w-1/2 rounded-lg shadow-lg">
           <div class="mr-6">
             <h4 class="text-2xl font-bold mb-2">Materiais</h4>
             <p class="mb-4">Todos os materiais, links, documentos e conteúdos compartilhados na turma.</p>
-            <a href="#materiais" class="text-blue-600 hover:underline">Acessar Materiais →</a>
+            <a href="materiais.html" class="text-blue-600 hover:underline">Acessar Materiais →</a>
           </div>
         </div>
 
         <div class="flex items-center">
-          <img src="eventos.png" alt="Eventos" class="w-1/2 rounded-lg shadow-lg">
+          <img src="" alt="Eventos" class="w-1/2 rounded-lg shadow-lg">
           <div class="ml-6">
             <h4 class="text-2xl font-bold mb-2">Eventos</h4>
-            <p class="mb-4">Fique por dentro dos eventos, palestras, reuniões e atividades da turma.</p>
-            <a href="#eventos" class="text-blue-600 hover:underline">Ver Eventos →</a>
+            <p class="mb-4">Fique por dentro dos eventos e atividades da turma.</p>
+            <a href="eventos.html" class="text-blue-600 hover:underline">Ver Eventos →</a>
           </div>
         </div>
 
         <div class="flex items-center flex-row-reverse">
-          <img src="mural.png" alt="Mural" class="w-1/2 rounded-lg shadow-lg">
+          <img src="" alt="Mural" class="w-1/2 rounded-lg shadow-lg">
           <div class="mr-6">
             <h4 class="text-2xl font-bold mb-2">Mural de Avisos</h4>
             <p class="mb-4">Acompanhe os recados, comunicados e avisos importantes da nossa turma.</p>
-            <a href="#mural" class="text-blue-600 hover:underline">Ver Mural →</a>
+            <a href="mural.html" class="text-blue-600 hover:underline">Ver Mural →</a>
           </div>
         </div>
 
@@ -188,4 +103,3 @@
 </body>
 </html>
 
--->
