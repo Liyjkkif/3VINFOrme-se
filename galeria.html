@@ -3,137 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mural</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Galeria</title>
+    <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+      .gradient{
+        background: linear-gradient(90deg, #1e90ff 0%, #00bfff 100%);
+      }
+    </style>
 </head>
+
 <body>
-<style>
-   h2{
-    text-align: center;
-   }
-    
-    .carousel {
-    position: relative;
-    width: 900px;
-    overflow: hidden;
-    margin: 0 auto;
-  }
 
-  .carousel-track {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-
-  .carousel-item {
-    min-width: 900px;
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-
-  .carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-  }
-
-  .carousel-btn.prev {
-    left: 10px;
-  }
-
-  .carousel-btn.next {
-    right: 10px;
-  }
-
-</style>
-
-  <nav>
-    <ul class="nav">
-      <li><a href="index.html">Início</a></li>
-      <li><a href="integrantes.html">Integrantes</a></li>
-      <li><a href="galeria.html">Galeria</a></li>
-      <li><a href="materiais.html">Materiais</a></li>
-      <li><a href="mange.html">Mange</a></li>
-      <li><a href="eventos.html">Eventos</a></li>
-      <li><a href="mural.html">Mural</a></li>
-    </ul>
+  <nav class="w-full bg-white shadow fixed top-0 z-50">
+    <div class="container mx-auto items-center flex justify-between p-4">
+      <ul class="flex gap-6">
+        <h1 class="text-2xl font-bold text-blue-600 ">Galeria</h1>
+        <li><a href="index.html" class="hover:text-blue-500">Início</a></li>
+        <li><a href="integrantes.html" class="hover:text-blue-500">Integrantes</a></li>
+        <li><a href="galeria.html" class="hover:text-blue-500">Galeria</a></li>
+        <li><a href="materiais.html" class="hover:text-blue-500">Materiais</a></li>
+        <li><a href="mange.html" class="hover:text-blue-500">Mange</a></li>
+        <li><a href="eventos.html" class="hover:text-blue-500">Eventos</a></li>
+        <li><a href="mural.html" class="hover:text-blue-500">Mural</a></li>
+      </ul>
+    </div>
   </nav>
+    
   
   <main>
     <h1>Galeria</h1>  
-     
-     <section>
-       <h2>2025</h2>
-         <div class="carousel">
-           <div class="carousel-track">
-              <div class="carousel-item"><img src="info0125.jpeg" alt="Img1" height="600" width="600"></div>
-           </div>
-           <button class="carousel-btn prev">◀</button>
-           <button class="carousel-btn next">▶</button>
-         </div>
-     </section>
-     
-     <section>
-       <h2>2024</h2>
-         <div class="carousel">
-           <div class="carousel-track">
-              <div class="carousel-item"><img src="info0124.jpeg" alt="Img1" height="600" width="600"></div>
-              <div class="carousel-item"><img src="info0224.jpg" alt="Img2" height="600" width="600"></div>
-           </div>
-           <button class="carousel-btn prev">◀</button>
-           <button class="carousel-btn next">▶</button>
-         </div>
-     </section>
-     
-     <section>
-       <h2>2023</h2>
-         <div class="carousel">
-           <div class="carousel-track">
-              <div class="carousel-item"><img src="info0123.jpg" alt="Img1" height="600" width="600"></div>
-              <div class="carousel-item"><img src="info0223.jpg" alt="Img2" height="600" width="600"></div>
-              <div class="carousel-item"><img src="info0323.jpeg" alt="Img3" height="600" width="600"></div>
-              <div class="carousel-item"><img src="info0423.jpg" alt="Img3" height="600" width="600"></div>
-           </div>
-           <button class="carousel-btn prev">◀</button>
-           <button class="carousel-btn next">▶</button>
-         </div>
-     </section>
            
 </main>	
-<footer>
-    <p>Contato | Créditos | Redes Sociais</p>
-</footer>
+
+  <footer class="bg-white border-t py-6">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+      <p class="text-gray-500">© 2025 Guia da Turma</p>
+      <div class="flex gap-4 mt-4 md:mt-0">
+        <a href="#" class="text-blue-600 hover:underline">Contato</a>
+        <a href="#" class="text-blue-600 hover:underline">Sobre</a>
+        <a href="#" class="text-blue-600 hover:underline">Redes</a>
+      </div>
+    </div>
+  </footer>
 
 <script>
-  var carousels = document.querySelectorAll('.carousel');
-
-  carousels.forEach(function(carousel) {
-    var track = carousel.querySelector('.carousel-track');
-    var prevButton = carousel.querySelector('.carousel-btn.prev');
-    var nextButton = carousel.querySelector('.carousel-btn.next');
-    var items = carousel.querySelectorAll('.carousel-item');
-
-    var currentIndex = 0;
-
-    nextButton.addEventListener('click', function() {
-      if (currentIndex < items.length - 1) {
-        currentIndex++;
-        track.style.transform = 'translateX(-' + (currentIndex * 900) + 'px)';
-      }
-    });
-
-    prevButton.addEventListener('click', function() {
-      if (currentIndex > 0) {
-        currentIndex--;
-        track.style.transform = 'translateX(-' + (currentIndex * 900) + 'px)';
-      }
-    });
-  });
 </script>
 </body>
 </html>
