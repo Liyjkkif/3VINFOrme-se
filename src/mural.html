@@ -28,13 +28,20 @@
     
      <h1 class="text-3xl font-bold mb-8 text-center text-blue-600">Mural de Avisos</h1>
 
-     <div class="container ">
-      <ul id="listaAvisos"></ul>      
-      <form id="formAviso">
-        <input type="text" id="inputAviso" placeholder="Adicione um aviso" required>
-        <button type="submit" id="buttonAviso">Adicionar</button>
-      </form>
+     <div class="w-full max-w-md mx-auto bg-white shadow p-4 rounded ">
+      <div class="container mx-auto flex flex-col justify-center items-center p-4 min-h">
+        <form id="formAviso" class="flex gap-2">
+          <input type="text" id="inputAviso" placeholder="Adicione um aviso" class="border border-gray-300 border-rounded px-2 py-1" required> 
+          <button type="submit" id="buttonAviso" class="bg-blue-500 px-4 py-2 rounded text-white">Adicionar</button>
+        </form>
+      </div> 
      </div>
+
+     <div class="container mx-auto flex flex-col justify-center items-center p-4 min-h">
+        <ul id="listaAvisos" class="flex flex-col gap-6"></ul>      
+     </div>
+     
+     
       
   </main>
 	
