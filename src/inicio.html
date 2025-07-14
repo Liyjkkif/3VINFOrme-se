@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Guia da Turma</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
   <style>
     html {
       scroll-behavior: smooth;
@@ -13,55 +14,86 @@
 </head>
 <body class="text-white">
 
-  <header class="fixed w-full z-30 top-0 left-0">
-    <div class="flex justify-between items-center px-8 py-4 bg-black bg-opacity-50 backdrop-blur-md">
-      <h1 class="text-xl font-bold">_<span class="text-purple-500">3VINFO</span>rme_se(Home)</h1>
-      <nav class="space-x-6">
-        <a href="inicio.html" class="hover:text-blue-400">Início</a>
-        <a href="mural.html" class="hover:text-blue-400">Integrantes</a>
-        <a href="galeria.html" class="hover:text-blue-400">Galeria</a>
-        <a href="materiais.html" class="hover:text-blue-400">Materiais</a>
-        <a href="mural.html" class="hover:text-blue-400">Mural</a>
-        <a href="mural.html" class="hover:text-blue-400">Mange</a>
-      </nav>
-    </div>
-  </header>
+<header class="fixed w-full z-30 top-0 left-0">
+  <div class="flex justify-between items-center px-8 py-4 bg-black bg-opacity-50 backdrop-blur-md">
+    <h1 class="text-xl font-bold">_<span class="text-purple-500">3VINFO</span>rme_se(Home)</h1>
+    <nav class="flex items-center space-x-6 text-white">
 
-  <section
-    id="inicio"
-    class="h-screen bg-cover bg-center flex items-center justify-center"
-    style="background-image: url('img/bg.jpg');"
-  >
-    <div class="text-center px-4">
-      <h2 class="text-4xl md:text-6xl font-bold">Bem-vindo ao _<strong>3VINFO</strong>rme_se!</h2>
-      <p class="text-lg mt-4 max-w-2xl mx-auto">Mantenha-se informado sobre eventos, acesse materiais selecionados justamente para você e mais!</p>
-    </div>
-  </section>
+      <a href="inicio.html" class="hover:text-blue-400">Início</a>
+      <a href="integrantes.html" class="hover:text-blue-400">Integrantes</a>
 
-  <section id="mural" class="min-h-screen bg-white text-gray-800 px-8 py-20">
-    <h3 class="text-3xl font-bold mb-6">Integrantes</h3>
-    <p class="max-w-2xl">Aqui estão os recados importantes da turma: avisos da professora, prazos de entrega, datas de prova e lembretes gerais.</p>
-  </section>    
+      <div class="relative">
+        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center gap-2 text-white hover:text-blue-400 transition">
+          Galeria
+          <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"/>
+          </svg>
+        </button>
 
-  <section id="galeria" class="min-h-screen bg-white text-gray-800 px-8 py-20">
-    <h3 class="text-3xl font-bold mb-6">Galeria</h3>
-    <p class="max-w-2xl">Veja registros dos nossos momentos juntos na sala, eventos e aulas de campo. Fotos, vídeos e lembranças da nossa jornada.</p>
-  </section>
+        <div id="dropdownNavbar" class="z-50 hidden absolute mt-2 right-0 bg-black bg-opacity-40 backdrop-blur-md divide-y divide-white/30 rounded-lg w-52 border border-white/20">
+          <ul class="py-2 text-sm text-white" aria-labelledby="dropdownNavbarLink">
+            <li>
+              <a href="galeria-joaopessoa.html" class="block px-4 py-2 hover:bg-white/20 rounded">João Pessoa</a>
+            </li>
+            <li>
+              <a href="galeria-katu.html" class="block px-4 py-2 hover:bg-white/20 rounded">Katu</a>
+            </li>
+            <li>
+              <a href="galeria-danca.html" class="block px-4 py-2 hover:bg-white/20 rounded">Mostra de Dança</a>
+            </li>
+            <li>
+              <a href="galeria-teatro.html" class="block px-4 py-2 hover:bg-white/20 rounded">Mostra de Teatro</a>
+            </li>
+            <li>
+              <a href="galeria-salaaula.html" class="block px-4 py-2 hover:bg-white/20 rounded">Sala de Aula</a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-  <section id="materiais" class="min-h-screen bg-gray-100 text-gray-800 px-8 py-20">
-    <h3 class="text-3xl font-bold mb-6">Materiais</h3>
-    <p class="max-w-2xl">Todos os materiais da turma: PDFs, links úteis, documentos, apresentações e conteúdos compartilhados em aula.</p>
-  </section>
+      <a href="materiais.html" class="hover:text-blue-400">Materiais</a>
+      <a href="mural.html" class="hover:text-blue-400">Mural</a>
+      <a href="mange.html" class="hover:text-blue-400">Mange</a>
+    </nav>
+  </div>
+</header>
 
-  <section id="mural" class="min-h-screen bg-white text-gray-800 px-8 py-20">
-    <h3 class="text-3xl font-bold mb-6">Mural de Avisos</h3>
-    <p class="max-w-2xl">Aqui estão os recados importantes da turma: avisos da professora, prazos de entrega, datas de prova e lembretes gerais.</p>
-  </section>
+<section
+  id="inicio"
+  class="h-screen bg-cover bg-center flex items-center justify-center"
+  style="background-image: url('img/bg.jpg');"
+>
+  <div class="text-center px-4">
+    <h2 class="text-4xl md:text-6xl font-bold">Bem-vindo ao _<strong>3VINFO</strong>rme_se!</h2>
+    <p class="text-lg mt-4 max-w-2xl mx-auto">Mantenha-se informado, acesse materiais exclusivos para você e mais!</p>
+  </div>
+</section>
 
-  <section id="mural" class="min-h-screen bg-white text-gray-800 px-8 py-20">
-    <h3 class="text-3xl font-bold mb-6">Mange</h3>
-    <p class="max-w-2xl">Aqui estão os recados importantes da turma: avisos da professora, prazos de entrega, datas de prova e lembretes gerais.</p>
-  </section>
+<section id="integrantes" class="min-h-screen bg-white text-gray-800 px-8 py-20">
+  <h3 class="text-3xl font-bold mb-6">Integrantes</h3>
+  <p class="max-w-2xl">Aqui estão os recados importantes da turma: avisos da professora, prazos de entrega, datas de prova e lembretes gerais.</p>
+</section>
 
+<section id="galeria" class="min-h-screen bg-white text-gray-800 px-8 py-20">
+  <h3 class="text-3xl font-bold mb-6">Galeria</h3>
+  <p class="max-w-2xl">Veja registros dos nossos momentos juntos na sala, eventos e aulas de campo. Fotos, vídeos e lembranças da nossa jornada.</p>
+</section>
+
+<section id="materiais" class="min-h-screen bg-gray-100 text-gray-800 px-8 py-20">
+  <h3 class="text-3xl font-bold mb-6">Materiais</h3>
+  <p class="max-w-2xl">Todos os materiais da turma: PDFs, links úteis, documentos, apresentações e conteúdos compartilhados em aula.</p>
+</section>
+
+<section id="mural" class="min-h-screen bg-white text-gray-800 px-8 py-20">
+  <h3 class="text-3xl font-bold mb-6">Mural de Avisos</h3>
+  <p class="max-w-2xl">Aqui estão os recados importantes da turma: avisos da professora, prazos de entrega, datas de prova e lembretes gerais.</p>
+</section>
+
+<section id="mange" class="min-h-screen bg-white text-gray-800 px-8 py-20">
+  <h3 class="text-3xl font-bold mb-6">Mange</h3>
+  <p class="max-w-2xl">Aqui estão os recados importantes da turma: avisos da professora, prazos de entrega, datas de prova e lembretes gerais.</p>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
 </html>
