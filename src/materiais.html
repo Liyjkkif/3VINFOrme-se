@@ -12,28 +12,54 @@
 
   <nav class="w-full bg-white shadow fixed top-0 z-50">
     <div class="container mx-auto flex items-center justify-between p-4">
-      <h1 class="text-2xl font-bold text-blue-600">Materiais</h1>
+      <h1 class="text-2xl font-bold text-blue-600">_3VINFOrme_se(Material)</h1>
+
       <ul class="flex gap-6">
         <li><a href="inicio.html" class="hover:text-blue-500">Início</a></li>
         <li><a href="integrantes.html" class="hover:text-blue-500">Integrantes</a></li>
-        <li><a href="galeria.html" class="hover:text-blue-500">Galeria</a></li>
+
+        <li>            
+          <div class="relative inline-block text-left">
+            <button id="dropdownButton" data-dropdown-toggle="dropdownMenu"
+              class="hover:text-blue-500">
+              Galeria
+            </button>
+            <div id="dropdownMenu"
+              class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 absolute mt-2">
+              <ul class="py-2 text-sm text-gray-700">
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">João Pessoa</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Katu</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Mostra de Dança</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Mostra de Teatro</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Sala de Aula</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
         <li><a href="materiais.html" class="hover:text-blue-500">Materiais</a></li>
         <li><a href="mange.html" class="hover:text-blue-500">Mange</a></li>
-        <li><a href="eventos.html" class="hover:text-blue-500">Eventos</a></li>
         <li><a href="mural.html" class="hover:text-blue-500">Mural</a></li>
       </ul>
     </div>
-  </nav>
+  </nav>  
 
   <main class="pt-32 px-6 max-w-7xl mx-auto">
-    <h1 class="text-3xl font-bold mb-8 text-center text-blue-600">Matérias</h1>
+    <h1 class="text-3xl font-bold mb-8 text-center text-blue-600">Materiais</h1>
     
     <div class="mb-6 max-w-md mx-auto">
       <select name="materias" id="materias" class="border border-gray-300 rounded px-4 py-2 w-full">
         <option value="">Selecione uma disciplina</option>
-        <option value="biologia">Biologia I</option>
-        <option value="sociologia">Sociologia III</option>
-        <option value="filosofia">Filosofia III</option>
+        <option value="programacao_banco_dados">Programação com Acesso a Banco de Dados</option>
+        <option value="quimica_1">Química I</option>
+        <option value="autoria_web">Autoria Web</option>
+        <option value="matematica_3">Matemática III</option>
+        <option value="biologia_1">Biologia I</option>
+        <option value="sociologia_3">Sociologia III</option>
+        <option value="filosofia_3">Filosofia III</option>
+        <option value="arquitetura_redes">Arquitetura de Redes de Computadores e Tecnologia de Implementação de Redes</option>
+        <option value="historia_1">História I</option>
+        <option value="organizacao_manutencao_computadores">Organização e Manutenção de Computadores</option>
+        <option value="portugues_3">Língua Portuguesa e Literatura III</option>
       </select>
     </div>
 
@@ -43,7 +69,6 @@
       <button id="btn-quiz" class="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded">Começar Quiz</button>
     </div>
 
-    <!-- Cards Section -->
     <section id="card-container" class="grid gap-6 max-w-3xl mx-auto"></section>
   </main>
 
@@ -60,7 +85,18 @@
 
   <script>
     const data = {
-      biologia: {
+      programacao_banco_dados: {
+              sumario: "A Biologia estuda os seres vivos, suas estruturas, funções e evolução.",
+              apostilas: [
+                "https://exemplo.com/biologia/apostila1.pdf",
+                "https://exemplo.com/biologia/apostila2.pdf"
+              ],
+              quiz: [
+                "Qual é a função do núcleo celular?",
+                "O que é mitose?"
+              ]
+            },
+      quimica_1: {
         sumario: "A Biologia estuda os seres vivos, suas estruturas, funções e evolução.",
         apostilas: [
           "https://exemplo.com/biologia/apostila1.pdf",
@@ -71,7 +107,85 @@
           "O que é mitose?"
         ]
       },
-      sociologia: {
+      autoria_web: {
+        sumario: "A Biologia estuda os seres vivos, suas estruturas, funções e evolução.",
+        apostilas: [
+          "https://exemplo.com/biologia/apostila1.pdf",
+          "https://exemplo.com/biologia/apostila2.pdf"
+        ],
+        quiz: [
+          "Qual é a função do núcleo celular?",
+          "O que é mitose?"
+        ]
+      },
+      matematica_3: {
+        sumario: "A Biologia estuda os seres vivos, suas estruturas, funções e evolução.",
+        apostilas: [
+          "https://exemplo.com/biologia/apostila1.pdf",
+          "https://exemplo.com/biologia/apostila2.pdf"
+        ],
+        quiz: [
+          "Qual é a função do núcleo celular?",
+          "O que é mitose?"
+        ]
+      },
+
+      biologia_1: {
+        sumario: "A Biologia estuda os seres vivos, suas estruturas, funções e evolução.",
+        apostilas: [
+          "https://exemplo.com/biologia/apostila1.pdf",
+          "https://exemplo.com/biologia/apostila2.pdf"
+        ],
+        quiz: [
+          "Qual é a função do núcleo celular?",
+          "O que é mitose?"
+        ]
+      },
+      sociologia_3: {
+        sumario: "A Biologia estuda os seres vivos, suas estruturas, funções e evolução.",
+        apostilas: [
+          "https://exemplo.com/biologia/apostila1.pdf",
+          "https://exemplo.com/biologia/apostila2.pdf"
+        ],
+        quiz: [
+          "Qual é a função do núcleo celular?",
+          "O que é mitose?"
+        ]
+      },
+      filosofia_3: {
+        sumario: "A Biologia estuda os seres vivos, suas estruturas, funções e evolução.",
+        apostilas: [
+          "https://exemplo.com/biologia/apostila1.pdf",
+          "https://exemplo.com/biologia/apostila2.pdf"
+        ],
+        quiz: [
+          "Qual é a função do núcleo celular?",
+          "O que é mitose?"
+        ]
+      },
+      arquitetura_redes: {
+        sumario: "A Biologia estuda os seres vivos, suas estruturas, funções e evolução.",
+        apostilas: [
+          "https://exemplo.com/biologia/apostila1.pdf",
+          "https://exemplo.com/biologia/apostila2.pdf"
+        ],
+        quiz: [
+          "Qual é a função do núcleo celular?",
+          "O que é mitose?"
+        ]
+      },
+      historia_1: {
+        sumario: "A Biologia estuda os seres vivos, suas estruturas, funções e evolução.",
+        apostilas: [
+          "https://exemplo.com/biologia/apostila1.pdf",
+          "https://exemplo.com/biologia/apostila2.pdf"
+        ],
+        quiz: [
+          "Qual é a função do núcleo celular?",
+          "O que é mitose?"
+        ]
+      },
+      organizacao_manutencao_computadores: {
         sumario: "A Sociologia analisa a sociedade, seus grupos, instituições e relações sociais.",
         apostilas: [
           "https://exemplo.com/sociologia/apostila1.pdf"
@@ -81,7 +195,7 @@
           "Quem é Émile Durkheim?"
         ]
       },
-      filosofia: {
+      portugues_3: {
         sumario: "A Filosofia busca entender a existência, o conhecimento e os valores humanos.",
         apostilas: [
           "https://exemplo.com/filosofia/apostila1.pdf",
@@ -135,7 +249,7 @@
 
     select.addEventListener('change', () => {
       currentSubject = select.value;
-      clearCards(); // Clear card section when subject changes
+      clearCards(); 
     });
   </script>
 

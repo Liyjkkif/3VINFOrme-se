@@ -9,16 +9,34 @@
 </head>
 <body class="bg-gray-100 text-gray-800">
 
-  <nav class="w-full bg-white shadow fixed top-0 z-50"> 
+  <nav class="w-full bg-white shadow fixed top-0 z-50">
     <div class="container mx-auto flex items-center justify-between p-4">
-      <h1 class="text-2xl text-blue-600 font-bold">Mural</h1>
+      <h1 class="text-2xl font-bold text-blue-600">_3VINFOrme_se(Mural)</h1>
+
       <ul class="flex gap-6">
         <li><a href="inicio.html" class="hover:text-blue-500">Início</a></li>
         <li><a href="integrantes.html" class="hover:text-blue-500">Integrantes</a></li>
-        <li><a href="galeria.html" class="hover:text-blue-500">Galeria</a></li>
+
+        <li>            
+          <div class="relative inline-block text-left">
+            <button id="dropdownButton" data-dropdown-toggle="dropdownMenu"
+              class="hover:text-blue-500">
+              Galeria
+            </button>
+            <div id="dropdownMenu"
+              class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 absolute mt-2">
+              <ul class="py-2 text-sm text-gray-700">
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">João Pessoa</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Katu</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Mostra de Dança</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Mostra de Teatro</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Sala de Aula</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
         <li><a href="materiais.html" class="hover:text-blue-500">Materiais</a></li>
         <li><a href="mange.html" class="hover:text-blue-500">Mange</a></li>
-        <li><a href="eventos.html" class="hover:text-blue-500">Eventos</a></li>
         <li><a href="mural.html" class="hover:text-blue-500">Mural</a></li>
       </ul>
     </div>
@@ -30,9 +48,16 @@
 
      <div class="w-full max-w-md mx-auto bg-white shadow p-4 rounded ">
       <div class="container mx-auto flex flex-col justify-center items-center p-4 min-h">
-        <form id="formAviso" class="flex gap-2">
+        <form id="formAviso" class="flex gap-2 flex flex-col gap-5">
+
+          <p>Informe aos colegas!</p>
           <input type="text" id="inputAviso" placeholder="Adicione um aviso" class="border border-gray-300 border-rounded px-2 py-1" required> 
-          <button type="submit" id="buttonAviso" class="bg-blue-500 px-4 py-2 rounded text-white">Adicionar</button>
+          <p>Início do Compromisso:</p>
+          <input type="date" id="dataInicio"> 
+          <p>Prazo Final:</p>
+          <input type="date" id="dataFinal">
+          <button type="submit" id="buttonAviso" class="bg-blue-500 px-4 py-2 rounded text-white">Adicionar</button> 
+
         </form>
       </div> 
      </div>
