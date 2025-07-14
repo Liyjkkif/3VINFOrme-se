@@ -1,123 +1,67 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-    .gradient {
-      background: linear-gradient(90deg, #1e90ff 0%, #00bfff 100%);
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guia da Turma</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
     }
   </style>
 </head>
+<body class="text-white">
 
-<body class="bg-gray-100 text-gray-800">
-
-  <nav class="w-full bg-white shadow fixed top-0 z-50">
-    <div class="container mx-auto flex items-center justify-between p-4">
-      <h1 class="text-2xl font-bold text-blue-600">_3VINFOrme_se(Home)</h1>
-
-      <ul class="flex gap-6">
-        <li><a href="inicio.html" class="hover:text-blue-500">Início</a></li>
-        <li><a href="integrantes.html" class="hover:text-blue-500">Integrantes</a></li>
-
-        <li>            
-          <div class="relative inline-block text-left">
-            <button id="dropdownButton" data-dropdown-toggle="dropdownMenu"
-              class="hover:text-blue-500">
-              Galeria
-            </button>
-            <div id="dropdownMenu"
-              class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 absolute mt-2">
-              <ul class="py-2 text-sm text-gray-700">
-                <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">João Pessoa</a></li>
-                <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Katu</a></li>
-                <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Mostra de Dança</a></li>
-                <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Mostra de Teatro</a></li>
-                <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Sala de Aula</a></li>
-              </ul>
-            </div>
-          </div>
-        </li>
-        <li><a href="materiais.html" class="hover:text-blue-500">Materiais</a></li>
-        <li><a href="mange.html" class="hover:text-blue-500">Mange</a></li>
-        <li><a href="mural.html" class="hover:text-blue-500">Mural</a></li>
-      </ul>
+  <!-- Navbar Transparente -->
+  <header class="fixed w-full z-30 top-0 left-0">
+    <div class="flex justify-between items-center px-8 py-4 bg-black bg-opacity-50 backdrop-blur-md">
+      <h1 class="text-xl font-bold">_3VINFOrme_se(Home)</h1>
+      <nav class="space-x-6">
+        <a href="inicio.html" class="hover:text-blue-400">Início</a>
+        <a href="galeria.html" class="hover:text-blue-400">Galeria</a>
+        <a href="materiais.html" class="hover:text-blue-400">Materiais</a>
+        <a href="eventos.html" class="hover:text-blue-400">Eventos</a>
+        <a href="mural.html" class="hover:text-blue-400">Mural</a>
+      </nav>
     </div>
-  </nav>
+  </header>
 
-  <section id="inicio" class="pt-24 gradient">
-    <div class="container mx-auto flex flex-col md:flex-row items-center py-12 px-6">
-      <div class="flex-1 mb-8 md:mb-0">
-        <h2 class="text-5xl font-bold mb-4 text-white">Bem-vindos ao Guia da Turma!</h2>
-        <p class="text-white mb-6">Aqui você encontra tudo sobre nossa turma: materiais, eventos, mural de avisos, calendário e muito mais.</p>
-        <a href="mural.html" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100">Ver mural</a>
-      </div>
-      <div class="flex-1">
-        <img src="img/turma.jpg" alt="Imagem Turma" class="rounded-lg shadow-lg">
-      </div>
+  <!-- Hero Section -->
+  <section
+    id="inicio"
+    class="h-screen bg-cover bg-center flex items-center justify-center"
+    style="background-image: url('img/bg.jpg');"
+  >
+    <div class="text-center px-4">
+      <h2 class="text-4xl md:text-6xl font-bold">Bem-vindo ao 3VINFOrme_se!</h2>
+      <p class="text-lg mt-4 max-w-2xl mx-auto">Mantenha-se informado sobre eventos, acesse materiais selecionados justamente para você e mais!</p>
     </div>
   </section>
 
-  <section class="py-16 bg-white">
-    <div class="container mx-auto px-6">
-      <h3 class="text-4xl font-bold text-center mb-12">Navegue pela nossa turma</h3>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-
-        <div class="flex items-center">
-          <img src="" alt="Galeria" class="w-1/2 rounded-lg shadow-lg">
-          <div class="ml-6">
-            <h4 class="text-2xl font-bold mb-2">Galeria</h4>
-            <p class="mb-4">Veja registros dos nossos momentos juntos na sala, eventos e aulas de campo.</p>
-            <a href="galeria.html" class="text-blue-600 hover:underline">Acessar Galeria →</a>
-          </div>
-        </div>
-
-        <div class="flex items-center flex-row-reverse">
-          <img src="" alt="Materiais" class="w-1/2 rounded-lg shadow-lg">
-          <div class="mr-6">
-            <h4 class="text-2xl font-bold mb-2">Materiais</h4>
-            <p class="mb-4">Todos os materiais, links, documentos e conteúdos compartilhados na turma.</p>
-            <a href="materiais.html" class="text-blue-600 hover:underline">Acessar Materiais →</a>
-          </div>
-        </div>
-
-        <div class="flex items-center">
-          <img src="" alt="Eventos" class="w-1/2 rounded-lg shadow-lg">
-          <div class="ml-6">
-            <h4 class="text-2xl font-bold mb-2">Eventos</h4>
-            <p class="mb-4">Fique por dentro dos eventos e atividades da turma.</p>
-            <a href="eventos.html" class="text-blue-600 hover:underline">Ver Eventos →</a>
-          </div>
-        </div>
-
-        <div class="flex items-center flex-row-reverse">
-          <img src="" alt="Mural" class="w-1/2 rounded-lg shadow-lg">
-          <div class="mr-6">
-            <h4 class="text-2xl font-bold mb-2">Mural de Avisos</h4>
-            <p class="mb-4">Acompanhe os recados, comunicados e avisos importantes da nossa turma.</p>
-            <a href="mural.html" class="text-blue-600 hover:underline">Ver Mural →</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
+  <!-- Galeria Section -->
+  <section id="galeria" class="min-h-screen bg-white text-gray-800 px-8 py-20">
+    <h3 class="text-3xl font-bold mb-6">Galeria</h3>
+    <p class="max-w-2xl">Veja registros dos nossos momentos juntos na sala, eventos e aulas de campo. Fotos, vídeos e lembranças da nossa jornada.</p>
   </section>
 
-  <footer class="bg-white border-t py-6">
-    <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
-      <p class="text-gray-500">© 2025 Guia da Turma</p>
-      <div class="flex gap-4 mt-4 md:mt-0">
-        <a href="#" class="text-blue-600 hover:underline">Contato</a>
-        <a href="#" class="text-blue-600 hover:underline">Sobre</a>
-        <a href="#" class="text-blue-600 hover:underline">Redes</a>
-      </div>
-    </div>
-  </footer>
-<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  <!-- Materiais Section -->
+  <section id="materiais" class="min-h-screen bg-gray-100 text-gray-800 px-8 py-20">
+    <h3 class="text-3xl font-bold mb-6">Materiais</h3>
+    <p class="max-w-2xl">Todos os materiais da turma: PDFs, links úteis, documentos, apresentações e conteúdos compartilhados em aula.</p>
+  </section>
+
+  <!-- Eventos Section -->
+  <section id="eventos" class="min-h-screen bg-gray-200 text-gray-800 px-8 py-20">
+    <h3 class="text-3xl font-bold mb-6">Eventos</h3>
+    <p class="max-w-2xl">Acompanhe nossos eventos: feiras, mostras culturais, saídas de campo, apresentações e tudo que vivemos juntos.</p>
+  </section>
+
+  <!-- Mural Section -->
+  <section id="mural" class="min-h-screen bg-white text-gray-800 px-8 py-20">
+    <h3 class="text-3xl font-bold mb-6">Mural de Avisos</h3>
+    <p class="max-w-2xl">Aqui estão os recados importantes da turma: avisos da professora, prazos de entrega, datas de prova e lembretes gerais.</p>
+  </section>
+
 </body>
 </html>
-
