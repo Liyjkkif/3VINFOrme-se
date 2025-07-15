@@ -77,9 +77,26 @@
     <div class="text-center space-x-4 mb-8">
       <button id="btn-sumario" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Sumário</button>
       <button id="btn-apostilas" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Apostilas</button>
-      <button id="btn-quiz" class="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded">Começar Quiz</button>
+      <button id="btn-quiz" class="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded">Questionário</button>
     </div>
 
+    <section id="quiz">
+      <div>
+        <h1>Realize o quiz no tempo limite para testar o que aprendeu!</h1>
+        <!--the questions well be based on the selected subject-->
+        <div id="questions">
+          <p>Questão 1.</p>
+          <p>Questão 2.</p>
+          <p>Questão 3.</p>
+          <p>Questão 4.</p>
+          <p>Questão 5.</p>
+          <p>Questão 6.</p>
+          <p>Questão 7.</p>
+        </div>
+        
+
+      </div>
+    </section>
     <section id="card-container" class="grid gap-6 max-w-3xl mx-auto"></section>
   </main>
 
@@ -230,6 +247,7 @@
       }
     };
 
+    const startQuiz = document.getElementById('btn-quiz');
     const select = document.getElementById('materias');
     const cardContainer = document.getElementById('card-container');
     let currentSubject = "";
