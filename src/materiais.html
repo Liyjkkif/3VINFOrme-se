@@ -2,22 +2,18 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <title>Materias</title>
+  <title>Materiais</title>
 </head>
-
 <body class="bg-gray-100 text-gray-800">
 
 <header class="fixed w-full z-30 top-0 left-0">
   <div class="flex justify-between items-center px-8 py-4 bg-black bg-opacity-50 backdrop-blur-md">
     <h1 class="text-xl font-bold">_<span class="text-purple-500">3VINFO</span>rme_se(Home)</h1>
     <nav class="flex items-center space-x-6 text-white">
-
       <a href="inicio.html" class="hover:text-blue-400">Início</a>
       <a href="integrantes.html" class="hover:text-blue-400">Integrantes</a>
-
       <div class="relative">
         <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center gap-2 text-white hover:text-blue-400 transition">
           Galeria
@@ -25,274 +21,235 @@
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"/>
           </svg>
         </button>
-
         <div id="dropdownNavbar" class="z-50 hidden absolute mt-2 right-0 bg-black bg-opacity-40 backdrop-blur-md divide-y divide-white/30 rounded-lg w-52 border border-white/20">
           <ul class="py-2 text-sm text-white" aria-labelledby="dropdownNavbarLink">
-            <li>
-              <a href="galeria-joaopessoa.html" class="block px-4 py-2 hover:bg-white/20 rounded">João Pessoa</a>
-            </li>
-            <li>
-              <a href="galeria-katu.html" class="block px-4 py-2 hover:bg-white/20 rounded">Katu</a>
-            </li>
-            <li>
-              <a href="galeria-danca.html" class="block px-4 py-2 hover:bg-white/20 rounded">Mostra de Dança</a>
-            </li>
-            <li>
-              <a href="galeria-teatro.html" class="block px-4 py-2 hover:bg-white/20 rounded">Mostra de Teatro</a>
-            </li>
-            <li>
-              <a href="galeria-salaaula.html" class="block px-4 py-2 hover:bg-white/20 rounded">Sala de Aula</a>
-            </li>
+            <li><a href="galeria-joaopessoa.html" class="block px-4 py-2 hover:bg-white/20 rounded">João Pessoa</a></li>
+            <li><a href="galeria-katu.html" class="block px-4 py-2 hover:bg-white/20 rounded">Katu</a></li>
+            <li><a href="galeria-danca.html" class="block px-4 py-2 hover:bg-white/20 rounded">Mostra de Dança</a></li>
+            <li><a href="galeria-teatro.html" class="block px-4 py-2 hover:bg-white/20 rounded">Mostra de Teatro</a></li>
+            <li><a href="galeria-salaaula.html" class="block px-4 py-2 hover:bg-white/20 rounded">Sala de Aula</a></li>
           </ul>
         </div>
       </div>
       <a href="materiais.html" class="hover:text-blue-400">Materiais</a>
-      <a href="materiais.html" class="hover:text-blue-400">Pódio</a>
+      <a href="podio.html" class="hover:text-blue-400">Pódio</a>
       <a href="mural.html" class="hover:text-blue-400">Mural</a>
-      <a href="mange.html" class="hover:text-blue-400">Mange</a>
     </nav>
   </div>
 </header>
 
-  <main class="pt-32 px-6 max-w-7xl mx-auto">
-    <h1 class="text-3xl font-bold mb-8 text-center text-blue-600">Materiais</h1>
-    
-    <div class="mb-6 max-w-md mx-auto">
-      <select name="materias" id="materias" class="border border-gray-300 rounded px-4 py-2 w-full">
-        <option value="">Selecione uma disciplina</option>
-        <option value="programacao_banco_dados">Programação com Acesso a Banco de Dados</option>
-        <option value="quimica_1">Química I</option>
-        <option value="autoria_web">Autoria Web</option>
-        <option value="matematica_3">Matemática III</option>
-        <option value="biologia_1">Biologia I</option>
-        <option value="sociologia_3">Sociologia III</option>
-        <option value="filosofia_3">Filosofia III</option>
-        <option value="arquitetura_redes">Arquitetura de Redes de Computadores e Tecnologia de Implementação de Redes</option>
-        <option value="historia_1">História I</option>
-        <option value="organizacao_manutencao_computadores">Organização e Manutenção de Computadores</option>
-        <option value="portugues_3">Língua Portuguesa e Literatura III</option>
-      </select>
+<main class="pt-32 px-6 max-w-7xl mx-auto">
+  <h1 class="text-3xl font-bold mb-8 text-center text-blue-600">Materiais</h1>
+
+  <div class="mb-6 max-w-md mx-auto">
+    <select name="materias" id="materias" class="border border-gray-300 rounded px-4 py-2 w-full">
+      <option value="">Selecione uma disciplina</option>
+      <option value="programacao_banco_dados">Programação com Acesso a Banco de Dados</option>
+      <option value="quimica_1">Química I</option>
+      <option value="autoria_web">Autoria Web</option>
+      <option value="matematica_3">Matemática III</option>
+      <option value="biologia_1">Biologia I</option>
+      <option value="sociologia_3">Sociologia III</option>
+      <option value="filosofia_3">Filosofia III</option>
+      <option value="arquitetura_redes">Arquitetura de Redes de Computadores e Tecnologia de Implementação de Redes</option>
+      <option value="historia_1">História I</option>
+      <option value="organizacao_manutencao_computadores">Organização e Manutenção de Computadores</option>
+      <option value="portugues_3">Língua Portuguesa e Literatura III</option>
+    </select>
+  </div>
+
+  <div class="text-center space-x-4 mb-8">
+    <button id="btn-sumario" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Sumário</button>
+    <button id="btn-apostilas" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Apostilas</button>
+    <button id="btn-quiz" class="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded">Questionário</button>
+  </div>
+
+  <section id="content-display" class="max-w-3xl mx-auto bg-white rounded shadow p-6 min-h-[200px]">
+    <!-- Aqui o sumário, apostilas ou quiz vão aparecer -->
+  </section>
+</main>
+
+<footer class="bg-white border-t py-6 mt-10">
+  <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+    <p class="text-gray-500">© 2025 Guia da Turma</p>
+    <div class="flex gap-4 mt-4 md:mt-0">
+      <a href="#" class="text-blue-600 hover:underline">Contato</a>
+      <a href="#" class="text-blue-600 hover:underline">Sobre</a>
+      <a href="#" class="text-blue-600 hover:underline">Redes</a>
     </div>
+  </div>
+</footer>
 
-    <div class="text-center space-x-4 mb-8">
-      <button id="btn-sumario" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Sumário</button>
-      <button id="btn-apostilas" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Apostilas</button>
-      <button id="btn-quiz" class="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded">Questionário</button>
-    </div>
-
-    <section id="quiz">
-      <div>
-        <h1>Realize o quiz no tempo limite para testar o que aprendeu!</h1>
-        <!--the questions well be based on the selected subject-->
-        <div id="questions">
-          <p>Questão 1.</p>
-          <p>Questão 2.</p>
-          <p>Questão 3.</p>
-          <p>Questão 4.</p>
-          <p>Questão 5.</p>
-          <p>Questão 6.</p>
-          <p>Questão 7.</p>
-        </div>
-        
-
-      </div>
-    </section>
-    <section id="card-container" class="grid gap-6 max-w-3xl mx-auto"></section>
-  </main>
-
-  <footer class="bg-white border-t py-6 mt-10">
-    <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
-      <p class="text-gray-500">© 2025 Guia da Turma</p>
-      <div class="flex gap-4 mt-4 md:mt-0">
-        <a href="#" class="text-blue-600 hover:underline">Contato</a>
-        <a href="#" class="text-blue-600 hover:underline">Sobre</a>
-        <a href="#" class="text-blue-600 hover:underline">Redes</a>
-      </div>
-    </div>
-  </footer>
-
-    <footer class="bg-white border-t py-6">
-    <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
-      <p class="text-gray-500">© 2025 3VINFOrme-se</p>
-      <div class="flex gap-4 mt-4 md:mt-0">
-        <a href="#" class="text-blue-600 hover:underline">Contato</a>
-        <a href="#" class="text-blue-600 hover:underline">Sobre</a>
-        <a href="#" class="text-blue-600 hover:underline">Redes</a>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    const data = {
-      programacao_banco_dados: {
-              sumario: "A Biologia estuda os seres vivos, suas estruturas, funções e evolução.",
-              apostilas: [
-                "https://exemplo.com/biologia/apostila1.pdf",
-                "https://exemplo.com/biologia/apostila2.pdf"
-              ],
-              quiz: [
-                "Qual é a função do núcleo celular?",
-                "O que é mitose?"
-              ]
-            },
-      quimica_1: {
-        sumario: "A Biologia estuda os seres vivos, suas estruturas, funções e evolução.",
-        apostilas: [
-          "https://exemplo.com/biologia/apostila1.pdf",
-          "https://exemplo.com/biologia/apostila2.pdf"
-        ],
-        quiz: [
-          "Qual é a função do núcleo celular?",
-          "O que é mitose?"
-        ]
-      },
-      autoria_web: {
-        sumario: "A Biologia estuda os seres vivos, suas estruturas, funções e evolução.",
-        apostilas: [
-          "https://exemplo.com/biologia/apostila1.pdf",
-          "https://exemplo.com/biologia/apostila2.pdf"
-        ],
-        quiz: [
-          "Qual é a função do núcleo celular?",
-          "O que é mitose?"
-        ]
-      },
-      matematica_3: {
-        sumario: "A Biologia estuda os seres vivos, suas estruturas, funções e evolução.",
-        apostilas: [
-          "https://exemplo.com/biologia/apostila1.pdf",
-          "https://exemplo.com/biologia/apostila2.pdf"
-        ],
-        quiz: [
-          "Qual é a função do núcleo celular?",
-          "O que é mitose?"
-        ]
-      },
-
-      biologia_1: {
-        sumario: "A Biologia estuda os seres vivos, suas estruturas, funções e evolução.",
-        apostilas: [
-          "https://exemplo.com/biologia/apostila1.pdf",
-          "https://exemplo.com/biologia/apostila2.pdf"
-        ],
-        quiz: [
-          "Qual é a função do núcleo celular?",
-          "O que é mitose?"
-        ]
-      },
-      sociologia_3: {
-        sumario: "A Biologia estuda os seres vivos, suas estruturas, funções e evolução.",
-        apostilas: [
-          "https://exemplo.com/biologia/apostila1.pdf",
-          "https://exemplo.com/biologia/apostila2.pdf"
-        ],
-        quiz: [
-          "Qual é a função do núcleo celular?",
-          "O que é mitose?"
-        ]
-      },
-      filosofia_3: {
-        sumario: "A Biologia estuda os seres vivos, suas estruturas, funções e evolução.",
-        apostilas: [
-          "https://exemplo.com/biologia/apostila1.pdf",
-          "https://exemplo.com/biologia/apostila2.pdf"
-        ],
-        quiz: [
-          "Qual é a função do núcleo celular?",
-          "O que é mitose?"
-        ]
-      },
-      arquitetura_redes: {
-        sumario: "A Biologia estuda os seres vivos, suas estruturas, funções e evolução.",
-        apostilas: [
-          "https://exemplo.com/biologia/apostila1.pdf",
-          "https://exemplo.com/biologia/apostila2.pdf"
-        ],
-        quiz: [
-          "Qual é a função do núcleo celular?",
-          "O que é mitose?"
-        ]
-      },
-      historia_1: {
-        sumario: "A Biologia estuda os seres vivos, suas estruturas, funções e evolução.",
-        apostilas: [
-          "https://exemplo.com/biologia/apostila1.pdf",
-          "https://exemplo.com/biologia/apostila2.pdf"
-        ],
-        quiz: [
-          "Qual é a função do núcleo celular?",
-          "O que é mitose?"
-        ]
-      },
-      organizacao_manutencao_computadores: {
-        sumario: "A Sociologia analisa a sociedade, seus grupos, instituições e relações sociais.",
-        apostilas: [
-          "https://exemplo.com/sociologia/apostila1.pdf"
-        ],
-        quiz: [
-          "O que é um fato social?",
-          "Quem é Émile Durkheim?"
-        ]
-      },
-      portugues_3: {
-        sumario: "A Filosofia busca entender a existência, o conhecimento e os valores humanos.",
-        apostilas: [
-          "https://exemplo.com/filosofia/apostila1.pdf",
-          "https://exemplo.com/filosofia/apostila2.pdf"
-        ],
-        quiz: [
-          "O que é ética segundo Aristóteles?",
-          "O que significa 'penso, logo existo'?"
-        ]
-      }
-    };
-
-    const startQuiz = document.getElementById('btn-quiz');
-    const select = document.getElementById('materias');
-    const cardContainer = document.getElementById('card-container');
-    let currentSubject = "";
-
-    function clearCards() {
-      cardContainer.innerHTML = "";
+<script>
+  const data = {
+    programacao_banco_dados: {
+      sumario: "Programação com Acesso a Banco de Dados aborda conceitos e práticas para manipular dados.",
+      apostilas: [
+        "https://exemplo.com/programacao/apostila1.pdf",
+        "https://exemplo.com/programacao/apostila2.pdf"
+      ],
+      quiz: [
+        "Qual comando SQL é usado para selecionar dados?",
+        "O que é uma chave primária?"
+      ]
+    },
+    quimica_1: {
+      sumario: "Química I estuda a composição, estrutura e propriedades da matéria.",
+      apostilas: [
+        "https://exemplo.com/quimica/apostila1.pdf",
+        "https://exemplo.com/quimica/apostila2.pdf"
+      ],
+      quiz: [
+        "O que é um elemento químico?",
+        "Qual a diferença entre mistura homogênea e heterogênea?"
+      ]
+    },
+    // Adicione os dados para outras matérias aqui conforme necessário...
+    autoria_web: {
+      sumario: "Autoria Web cobre desenvolvimento e design de páginas web.",
+      apostilas: [
+        "https://exemplo.com/web/apostila1.pdf"
+      ],
+      quiz: [
+        "O que é HTML?",
+        "Para que serve CSS?"
+      ]
+    },
+    matematica_3: {
+      sumario: "Matemática III aborda cálculo e funções avançadas.",
+      apostilas: [
+        "https://exemplo.com/matematica/apostila1.pdf"
+      ],
+      quiz: [
+        "Defina função linear.",
+        "O que é derivada?"
+      ]
+    },
+    biologia_1: {
+      sumario: "A Biologia estuda os seres vivos, suas estruturas, funções e evolução.",
+      apostilas: [
+        "https://exemplo.com/biologia/apostila1.pdf",
+        "https://exemplo.com/biologia/apostila2.pdf"
+      ],
+      quiz: [
+        "Qual é a função do núcleo celular?",
+        "O que é mitose?"
+      ]
+    },
+    sociologia_3: {
+      sumario: "Sociologia III analisa grupos sociais e instituições.",
+      apostilas: [
+        "https://exemplo.com/sociologia/apostila1.pdf"
+      ],
+      quiz: [
+        "O que é um fato social?",
+        "Quem é Émile Durkheim?"
+      ]
+    },
+    filosofia_3: {
+      sumario: "Filosofia III busca entender a existência e o conhecimento.",
+      apostilas: [
+        "https://exemplo.com/filosofia/apostila1.pdf"
+      ],
+      quiz: [
+        "O que é ética segundo Aristóteles?",
+        "O que significa 'penso, logo existo'?"
+      ]
+    },
+    arquitetura_redes: {
+      sumario: "Arquitetura de Redes aborda infraestrutura e protocolos de redes.",
+      apostilas: [
+        "https://exemplo.com/redes/apostila1.pdf"
+      ],
+      quiz: [
+        "O que é um protocolo de rede?",
+        "Qual a função do roteador?"
+      ]
+    },
+    historia_1: {
+      sumario: "História I estuda os principais eventos históricos.",
+      apostilas: [
+        "https://exemplo.com/historia/apostila1.pdf"
+      ],
+      quiz: [
+        "Quando aconteceu a Revolução Francesa?",
+        "Quem foi Dom Pedro I?"
+      ]
+    },
+    organizacao_manutencao_computadores: {
+      sumario: "Organização e Manutenção de Computadores trata hardware e software.",
+      apostilas: [
+        "https://exemplo.com/computadores/apostila1.pdf"
+      ],
+      quiz: [
+        "O que é hardware?",
+        "Para que serve o BIOS?"
+      ]
+    },
+    portugues_3: {
+      sumario: "Língua Portuguesa e Literatura III aborda gramática e interpretação.",
+      apostilas: [
+        "https://exemplo.com/portugues/apostila1.pdf"
+      ],
+      quiz: [
+        "O que é sujeito na oração?",
+        "Explique a figura de linguagem metáfora."
+      ]
     }
+  };
 
-    function createCard(title, content) {
-      const card = document.createElement("div");
-      card.className = "bg-white rounded shadow p-6";
-      card.innerHTML = `<h2 class="text-xl font-semibold mb-2">${title}</h2>${content}`;
-      cardContainer.appendChild(card);
+  const select = document.getElementById('materias');
+  const btnSumario = document.getElementById('btn-sumario');
+  const btnApostilas = document.getElementById('btn-apostilas');
+  const btnQuiz = document.getElementById('btn-quiz');
+  const contentDisplay = document.getElementById('content-display');
+
+  let currentSubject = "";
+
+  select.addEventListener('change', () => {
+    currentSubject = select.value;
+    contentDisplay.innerHTML = ""; // limpa ao mudar
+  });
+
+  btnSumario.addEventListener('click', () => {
+    if (!currentSubject) {
+      alert('Por favor, selecione uma disciplina antes.');
+      return;
     }
+    contentDisplay.innerHTML = `<h2 class="text-2xl font-semibold mb-4">Sumário</h2>
+      <p>${data[currentSubject].sumario}</p>`;
+  });
 
-    document.getElementById('btn-sumario').addEventListener('click', () => {
-      if (!currentSubject || !data[currentSubject]) return;
-      clearCards();
-      createCard("Sumário", `<p>${data[currentSubject].sumario}</p>`);
-    });
+  btnApostilas.addEventListener('click', () => {
+    if (!currentSubject) {
+      alert('Por favor, selecione uma disciplina antes.');
+      return;
+    }
+    const apostilas = data[currentSubject].apostilas;
+    if (apostilas.length === 0) {
+      contentDisplay.innerHTML = "<p>Não há apostilas disponíveis para esta disciplina.</p>";
+      return;
+    }
+    const listItems = apostilas.map(link => `<li><a href="${link}" target="_blank" class="text-blue-600 underline">${link}</a></li>`).join("");
+    contentDisplay.innerHTML = `<h2 class="text-2xl font-semibold mb-4">Apostilas</h2>
+      <ul class="list-disc ml-6">${listItems}</ul>`;
+  });
 
-    document.getElementById('btn-apostilas').addEventListener('click', () => {
-      if (!currentSubject || !data[currentSubject]) return;
-      clearCards();
-      const links = data[currentSubject].apostilas.map(link =>
-        `<li><a href="${link}" target="_blank" class="text-blue-500 underline">${link}</a></li>`
-      ).join("");
-      createCard("Apostilas", `<ul class="list-disc ml-5">${links}</ul>`);
-    });
+  btnQuiz.addEventListener('click', () => {
+    if (!currentSubject) {
+      alert('Por favor, selecione uma disciplina antes.');
+      return;
+    }
+    const quiz = data[currentSubject].quiz;
+    if (quiz.length === 0) {
+      contentDisplay.innerHTML = "<p>Não há questões disponíveis para esta disciplina.</p>";
+      return;
+    }
+    const questionsList = quiz.map((q, i) => `<li class="mb-2">${q}</li>`).join("");
+    contentDisplay.innerHTML = `<h2 class="text-2xl font-semibold mb-4">Questionário</h2>
+      <ol class="list-decimal ml-6">${questionsList}</ol>`;
+  });
+</script>
 
-    document.getElementById('btn-quiz').addEventListener('click', () => {
-      if (!currentSubject || !data[currentSubject]) return;
-      clearCards();
-      const questions = data[currentSubject].quiz.map(q =>
-        `<li>${q}</li>`
-      ).join("");
-      createCard("Quiz", `<ol class="list-decimal ml-5">${questions}</ol>`);
-    });
-
-    select.addEventListener('change', () => {
-      currentSubject = select.value;
-      clearCards(); 
-    });
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
 </html>
