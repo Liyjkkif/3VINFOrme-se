@@ -1,100 +1,212 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>   
-      .gradient {
-      background: linear-gradient(90deg, #1e90ff 0%, #00bfff 100%);
-      }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>3VINFOrme-se - Integrantes</title>
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Gradiente roxo-azul para destaques */
+    .gradient {
+      background: linear-gradient(90deg, #7e22ce 0%, #3b82f6 100%);
+    }
+  </style>
 </head>
 
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-gray-900 text-gray-200">
 
 <header class="fixed w-full z-30 top-0 left-0">
-  <div class="flex justify-between items-center px-8 py-4 bg-black bg-opacity-50 backdrop-blur-md">
-    <h1 class="text-xl font-bold">_<span class="text-purple-500">3VINFO</span>rme_se(Home)</h1>
-    <nav class="flex items-center space-x-6 text-white">
-      <a href="inicio.html" class="hover:text-blue-400">Início</a>
-      <a href="integrantes.html" class="hover:text-blue-400">Integrantes</a>
+  <div class="flex justify-between items-center px-8 py-4 bg-black bg-opacity-70 backdrop-blur-md">
+    <h1 class="text-xl font-bold">
+      _<span class="text-purple-500">3VINFO</span>rme_se(Home)
+    </h1>
+    <nav class="flex items-center space-x-6 text-gray-200">
+      <a href="inicio.html" class="hover:text-purple-400 transition">Início</a>
+      <a href="integrantes.html" class="hover:text-purple-400 transition">Integrantes</a>
       <div class="relative">
-        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center gap-2 text-white hover:text-blue-400 transition">
+        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center gap-2 hover:text-purple-400 transition">
           Galeria
           <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"/>
           </svg>
         </button>
-        <div id="dropdownNavbar" class="z-50 hidden absolute mt-2 right-0 bg-black bg-opacity-40 backdrop-blur-md divide-y divide-white/30 rounded-lg w-52 border border-white/20">
-          <ul class="py-2 text-sm text-white" aria-labelledby="dropdownNavbarLink">
-            <li><a href="galeria-joaopessoa.html" class="block px-4 py-2 hover:bg-white/20 rounded">João Pessoa</a></li>
-            <li><a href="galeria-katu.html" class="block px-4 py-2 hover:bg-white/20 rounded">Katu</a></li>
-            <li><a href="galeria-danca.html" class="block px-4 py-2 hover:bg-white/20 rounded">Mostra de Dança</a></li>
-            <li><a href="galeria-teatro.html" class="block px-4 py-2 hover:bg-white/20 rounded">Mostra de Teatro</a></li>
-            <li><a href="galeria-salaaula.html" class="block px-4 py-2 hover:bg-white/20 rounded">Sala de Aula</a></li>
+        <div id="dropdownNavbar" class="z-50 hidden absolute mt-2 right-0 bg-black bg-opacity-70 backdrop-blur-md divide-y divide-gray-600 rounded-lg w-52 border border-gray-700">
+          <ul class="py-2 text-sm text-gray-300" aria-labelledby="dropdownNavbarLink">
+            <li><a href="galeria-joaopessoa.html" class="block px-4 py-2 hover:bg-purple-700 rounded">João Pessoa</a></li>
+            <li><a href="galeria-katu.html" class="block px-4 py-2 hover:bg-purple-700 rounded">Katu</a></li>
+            <li><a href="galeria-danca.html" class="block px-4 py-2 hover:bg-purple-700 rounded">Mostra de Dança</a></li>
+            <li><a href="galeria-teatro.html" class="block px-4 py-2 hover:bg-purple-700 rounded">Mostra de Teatro</a></li>
+            <li><a href="galeria-salaaula.html" class="block px-4 py-2 hover:bg-purple-700 rounded">Sala de Aula</a></li>
           </ul>
         </div>
       </div>
-      <a href="materiais.html" class="hover:text-blue-400">Materiais</a>
-      <a href="podio.html" class="hover:text-blue-400">Pódio</a>
-      <a href="mural.html" class="hover:text-blue-400">Mural</a>
+      <a href="materiais.html" class="hover:text-purple-400 transition">Materiais</a>
+      <a href="podio.html" class="hover:text-purple-400 transition">Pódio</a>
+      <a href="mural.html" class="hover:text-purple-400 transition">Mural</a>
     </nav>
   </div>
 </header>
-  
-<main class="pt-32 px-6 max-w-7xl mx-auto">
-  <h1 class="text-3xl font-bold mb-8 text-center text-blue-600">Integrantes da Turma</h1>
 
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
-    <div class="bg-white rounded-xl shadow p-4 text-center"><h3 class="font-semibold text-lg text-gray-800">Adriely Daiany da Silva</h3><p class="text-sm text-gray-500">20231144010036</p></div>
-    <div class="bg-white rounded-xl shadow p-4 text-center"><h3 class="font-semibold text-lg text-gray-800">Afonso Silva de Lima Torres</h3><p class="text-sm text-gray-500">20231144010009</p></div>
-    <div class="bg-white rounded-xl shadow p-4 text-center"><h3 class="font-semibold text-lg text-gray-800">Alicia Martins de Macedo</h3><p class="text-sm text-gray-500">20231144010066</p></div>
-    <div class="bg-white rounded-xl shadow p-4 text-center"><h3 class="font-semibold text-lg text-gray-800">Amilton de Almeida Dantas Junior</h3><p class="text-sm text-gray-500">20231144010030</p></div>
-    <div class="bg-white rounded-xl shadow p-4 text-center"><h3 class="font-semibold text-lg text-gray-800">Ananda Beatriz Soares Varela Barca</h3><p class="text-sm text-gray-500">20231144010063</p></div>
-    <div class="bg-white rounded-xl shadow p-4 text-center"><h3 class="font-semibold text-lg text-gray-800">Antony Gabriel Lopes de Lima</h3><p class="text-sm text-gray-500">20231144010052</p></div>
-    <div class="bg-white rounded-xl shadow p-4 text-center"><h3 class="font-semibold text-lg text-gray-800">Breno Francisco Gusmão</h3><p class="text-sm text-gray-500">20231144010022</p></div>
-    <div class="bg-white rounded-xl shadow p-4 text-center"><h3 class="font-semibold text-lg text-gray-800">Bruno Gustavo Lopes de Souza</h3><p class="text-sm text-gray-500">20231144010008</p></div>
-    <div class="bg-white rounded-xl shadow p-4 text-center"><h3 class="font-semibold text-lg text-gray-800">Cauã de Lima Araújo</h3><p class="text-sm text-gray-500">20231144010003</p></div>
-    <div class="bg-white rounded-xl shadow p-4 text-center"><h3 class="font-semibold text-lg text-gray-800">Davi Galdino Pereira</h3><p class="text-sm text-gray-500">20231144010032</p></div>
-    <div class="bg-white rounded-xl shadow p-4 text-center"><h3 class="font-semibold text-lg text-gray-800">Edvan Fontes Coelho</h3><p class="text-sm text-gray-500">20231144010021</p></div>
-    <div class="bg-white rounded-xl shadow p-4 text-center"><h3 class="font-semibold text-lg text-gray-800">Fabiana Antunes da Silva</h3><p class="text-sm text-gray-500">20231144010062</p></div>
-    <div class="bg-white rounded-xl shadow p-4 text-center"><h3 class="font-semibold text-lg text-gray-800">Geovana Gabriele Marcelino Paiva</h3><p class="text-sm text-gray-500">20231144010080</p></div>
-    <div class="bg-white rounded-xl shadow p-4 text-center"><h3 class="font-semibold text-lg text-gray-800">Guilherme Narciso Trigueiro</h3><p class="text-sm text-gray-500">20231144010023</p></div>
-    <div class="bg-white rounded-xl shadow p-4 text-center"><h3 class="font-semibold text-lg text-gray-800">Harlley Rocha dos Santos</h3><p class="text-sm text-gray-500">20231144010051</p></div>
-    <div class="bg-white rounded-xl shadow p-4 text-center"><h3 class="font-semibold text-lg text-gray-800">Ingrid Beatriz Barbosa da Silva</h3><p class="text-sm text-gray-500">20231144010041</p></div>
-    <div class="bg-white rounded-xl shadow p-4 text-center"><h3 class="font-semibold text-lg text-gray-800">Isadora Fernandes Raquel</h3><p class="text-sm text-gray-500">20231144010025</p></div>
-    <div class="bg-white rounded-xl shadow p-4 text-center"><h3 class="font-semibold text-lg text-gray-800">Jadson Lima do Nascimento</h3><p class="text-sm text-gray-500">20231144010075</p></div>
-    <div class="bg-white rounded-xl shadow p-4 text-center"><h3 class="font-semibold text-lg text-gray-800">Julia Bezerra Batista</h3><p class="text-sm text-gray-500">20231144010055</p></div>
-    <div class="bg-white rounded-xl shadow p-4 text-center"><h3 class="font-semibold text-lg text-gray-800">Júlio Cesar de Oliveira Alves</h3><p class="text-sm text-gray-500">20231144010043</p></div>
-    <div class="bg-white rounded-xl shadow p-4 text-center"><h3 class="font-semibold text-lg text-gray-800">Ketlyn Kauany Ferreira dos Santos</h3><p class="text-sm text-gray-500">20231144010081</p></div>
-    <div class="bg-white rounded-xl shadow p-4 text-center"><h3 class="font-semibold text-lg text-gray-800">Lucas de Lima Barros</h3><p class="text-sm text-gray-500">20231144010027</p></div>
-    <div class="bg-white rounded-xl shadow p-4 text-center"><h3 class="font-semibold text-lg text-gray-800">Maria Eduarda do Nascimento Teixeira</h3><p class="text-sm text-gray-500">20221144010062</p></div>
-    <div class="bg-white rounded-xl shadow p-4 text-center"><h3 class="font-semibold text-lg text-gray-800">Maria Gabriella Monteiro Alves</h3><p class="text-sm text-gray-500">20231144010015</p></div>
-    <div class="bg-white rounded-xl shadow p-4 text-center"><h3 class="font-semibold text-lg text-gray-800">Maria Luisa Azevedo Souza</h3><p class="text-sm text-gray-500">20231144010067</p></div>
-    <div class="bg-white rounded-xl shadow p-4 text-center"><h3 class="font-semibold text-lg text-gray-800">Mariana Gabrielly de Oliveira Silva</h3><p class="text-sm text-gray-500">20231144010029</p></div>
-    <div class="bg-white rounded-xl shadow p-4 text-center"><h3 class="font-semibold text-lg text-gray-800">Marina Ribeiro de Souza</h3><p class="text-sm text-gray-500">20231144010040</p></div>
-    <div class="bg-white rounded-xl shadow p-4 text-center"><h3 class="font-semibold text-lg text-gray-800">Matheus da Silva Souza</h3><p class="text-sm text-gray-500">20231144010001</p></div>
-    <div class="bg-white rounded-xl shadow p-4 text-center"><h3 class="font-semibold text-lg text-gray-800">Mikelly da Silva Souza</h3><p class="text-sm text-gray-500">20231144010069</p></div>
-    <div class="bg-white rounded-xl shadow p-4 text-center"><h3 class="font-semibold text-lg text-gray-800">Radmila de Souza Dantas</h3><p class="text-sm text-gray-500">20231144010031</p></div>
-    <div class="bg-white rounded-xl shadow p-4 text-center"><h3 class="font-semibold text-lg text-gray-800">Ramon Lincon Viana de Moura</h3><p class="text-sm text-gray-500">20231144010020</p></div>
-    <div class="bg-white rounded-xl shadow p-4 text-center"><h3 class="font-semibold text-lg text-gray-800">Vinícius Alves Moura de Oliveira</h3><p class="text-sm text-gray-500">20231144010007</p></div>
-    <div class="bg-white rounded-xl shadow p-4 text-center"><h3 class="font-semibold text-lg text-gray-800">Vinícius Costa e Silva Ferreira de Lima</h3><p class="text-sm text-gray-500">20231144010054</p></div>
-    <div class="bg-white rounded-xl shadow p-4 text-center"><h3 class="font-semibold text-lg text-gray-800">Vitória da Silva Galdino</h3><p class="text-sm text-gray-500">20221144010080</p></div>
+<main class="pt-32 px-6 max-w-7xl mx-auto">
+  <h1 class="text-4xl font-extrabold mb-10 text-center gradient bg-clip-text text-transparent">
+    Integrantes da Turma
+  </h1>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+  
+  <div class="bg-gray-800 rounded-xl shadow-lg p-5 text-center hover:scale-105 transform transition">
+    <h3 class="font-semibold text-lg text-purple-400">Adriely Daiany da Silva</h3>
+    <p class="text-sm text-gray-400">20231144010036</p>
   </div>
+  <div class="bg-gray-800 rounded-xl shadow-lg p-5 text-center hover:scale-105 transform transition">
+    <h3 class="font-semibold text-lg text-purple-400">Afonso Silva de Lima Torres</h3>
+    <p class="text-sm text-gray-400">20231144010009</p>
+  </div>
+  <div class="bg-gray-800 rounded-xl shadow-lg p-5 text-center hover:scale-105 transform transition">
+    <h3 class="font-semibold text-lg text-purple-400">Alicia Martins de Macedo</h3>
+    <p class="text-sm text-gray-400">20231144010066</p>
+  </div>
+  <div class="bg-gray-800 rounded-xl shadow-lg p-5 text-center hover:scale-105 transform transition">
+    <h3 class="font-semibold text-lg text-purple-400">Amilton de Almeida Dantas Junior</h3>
+    <p class="text-sm text-gray-400">20231144010030</p>
+  </div>
+  <div class="bg-gray-800 rounded-xl shadow-lg p-5 text-center hover:scale-105 transform transition">
+    <h3 class="font-semibold text-lg text-purple-400">Ananda Beatriz Soares Varela Barca</h3>
+    <p class="text-sm text-gray-400">20231144010063</p>
+  </div>
+  <div class="bg-gray-800 rounded-xl shadow-lg p-5 text-center hover:scale-105 transform transition">
+    <h3 class="font-semibold text-lg text-purple-400">Antony Gabriel Lopes de Lima</h3>
+    <p class="text-sm text-gray-400">20231144010052</p>
+  </div>
+  <div class="bg-gray-800 rounded-xl shadow-lg p-5 text-center hover:scale-105 transform transition">
+    <h3 class="font-semibold text-lg text-purple-400">Breno Francisco Gusmão</h3>
+    <p class="text-sm text-gray-400">20231144010022</p>
+  </div>
+  <div class="bg-gray-800 rounded-xl shadow-lg p-5 text-center hover:scale-105 transform transition">
+    <h3 class="font-semibold text-lg text-purple-400">Bruno Gustavo Lopes de Souza</h3>
+    <p class="text-sm text-gray-400">20231144010008</p>
+  </div>
+  <div class="bg-gray-800 rounded-xl shadow-lg p-5 text-center hover:scale-105 transform transition">
+    <h3 class="font-semibold text-lg text-purple-400">Cauã de Lima Araújo</h3>
+    <p class="text-sm text-gray-400">20231144010003</p>
+  </div>
+  <div class="bg-gray-800 rounded-xl shadow-lg p-5 text-center hover:scale-105 transform transition">
+    <h3 class="font-semibold text-lg text-purple-400">Davi Galdino Pereira</h3>
+    <p class="text-sm text-gray-400">20231144010032</p>
+  </div>
+  <div class="bg-gray-800 rounded-xl shadow-lg p-5 text-center hover:scale-105 transform transition">
+    <h3 class="font-semibold text-lg text-purple-400">Edvan Fontes Coelho</h3>
+    <p class="text-sm text-gray-400">20231144010021</p>
+  </div>
+  <div class="bg-gray-800 rounded-xl shadow-lg p-5 text-center hover:scale-105 transform transition">
+    <h3 class="font-semibold text-lg text-purple-400">Fabiana Antunes da Silva</h3>
+    <p class="text-sm text-gray-400">20231144010062</p>
+  </div>
+  <div class="bg-gray-800 rounded-xl shadow-lg p-5 text-center hover:scale-105 transform transition">
+    <h3 class="font-semibold text-lg text-purple-400">Geovana Gabriele Marcelino Paiva</h3>
+    <p class="text-sm text-gray-400">20231144010080</p>
+  </div>
+  <div class="bg-gray-800 rounded-xl shadow-lg p-5 text-center hover:scale-105 transform transition">
+    <h3 class="font-semibold text-lg text-purple-400">Guilherme Narciso Trigueiro</h3>
+    <p class="text-sm text-gray-400">20231144010023</p>
+  </div>
+  <div class="bg-gray-800 rounded-xl shadow-lg p-5 text-center hover:scale-105 transform transition">
+    <h3 class="font-semibold text-lg text-purple-400">Harlley Rocha dos Santos</h3>
+    <p class="text-sm text-gray-400">20231144010051</p>
+  </div>
+  <div class="bg-gray-800 rounded-xl shadow-lg p-5 text-center hover:scale-105 transform transition">
+    <h3 class="font-semibold text-lg text-purple-400">Ingrid Beatriz Barbosa da Silva</h3>
+    <p class="text-sm text-gray-400">20231144010041</p>
+  </div>
+  <div class="bg-gray-800 rounded-xl shadow-lg p-5 text-center hover:scale-105 transform transition">
+    <h3 class="font-semibold text-lg text-purple-400">Isadora Fernandes Raquel</h3>
+    <p class="text-sm text-gray-400">20231144010025</p>
+  </div>
+  <div class="bg-gray-800 rounded-xl shadow-lg p-5 text-center hover:scale-105 transform transition">
+    <h3 class="font-semibold text-lg text-purple-400">Jadson Lima do Nascimento</h3>
+    <p class="text-sm text-gray-400">20231144010075</p>
+  </div>
+  <div class="bg-gray-800 rounded-xl shadow-lg p-5 text-center hover:scale-105 transform transition">
+    <h3 class="font-semibold text-lg text-purple-400">Julia Bezerra Batista</h3>
+    <p class="text-sm text-gray-400">20231144010055</p>
+  </div>
+  <div class="bg-gray-800 rounded-xl shadow-lg p-5 text-center hover:scale-105 transform transition">
+    <h3 class="font-semibold text-lg text-purple-400">Júlio Cesar de Oliveira Alves</h3>
+    <p class="text-sm text-gray-400">20231144010043</p>
+  </div>
+  <div class="bg-gray-800 rounded-xl shadow-lg p-5 text-center hover:scale-105 transform transition">
+    <h3 class="font-semibold text-lg text-purple-400">Ketlyn Kauany Ferreira dos Santos</h3>
+    <p class="text-sm text-gray-400">20231144010081</p>
+  </div>
+  <div class="bg-gray-800 rounded-xl shadow-lg p-5 text-center hover:scale-105 transform transition">
+    <h3 class="font-semibold text-lg text-purple-400">Lucas de Lima Barros</h3>
+    <p class="text-sm text-gray-400">20231144010027</p>
+  </div>
+  <div class="bg-gray-800 rounded-xl shadow-lg p-5 text-center hover:scale-105 transform transition">
+    <h3 class="font-semibold text-lg text-purple-400">Maria Eduarda do Nascimento Teixeira</h3>
+    <p class="text-sm text-gray-400">20221144010062</p>
+  </div>
+  <div class="bg-gray-800 rounded-xl shadow-lg p-5 text-center hover:scale-105 transform transition">
+    <h3 class="font-semibold text-lg text-purple-400">Maria Gabriella Monteiro Alves</h3>
+    <p class="text-sm text-gray-400">20231144010015</p>
+  </div>
+  <div class="bg-gray-800 rounded-xl shadow-lg p-5 text-center hover:scale-105 transform transition">
+    <h3 class="font-semibold text-lg text-purple-400">Maria Luisa Azevedo Souza</h3>
+    <p class="text-sm text-gray-400">20231144010067</p>
+  </div>
+  <div class="bg-gray-800 rounded-xl shadow-lg p-5 text-center hover:scale-105 transform transition">
+    <h3 class="font-semibold text-lg text-purple-400">Mariana Gabrielly de Oliveira Silva</h3>
+    <p class="text-sm text-gray-400">20231144010029</p>
+  </div>
+  <div class="bg-gray-800 rounded-xl shadow-lg p-5 text-center hover:scale-105 transform transition">
+    <h3 class="font-semibold text-lg text-purple-400">Marina Ribeiro de Souza</h3>
+    <p class="text-sm text-gray-400">20231144010040</p>
+  </div>
+  <div class="bg-gray-800 rounded-xl shadow-lg p-5 text-center hover:scale-105 transform transition">
+    <h3 class="font-semibold text-lg text-purple-400">Matheus da Silva Souza</h3>
+    <p class="text-sm text-gray-400">20231144010001</p>
+  </div>
+  <div class="bg-gray-800 rounded-xl shadow-lg p-5 text-center hover:scale-105 transform transition">
+    <h3 class="font-semibold text-lg text-purple-400">Mikelly da Silva Souza</h3>
+    <p class="text-sm text-gray-400">20231144010069</p>
+  </div>
+  <div class="bg-gray-800 rounded-xl shadow-lg p-5 text-center hover:scale-105 transform transition">
+    <h3 class="font-semibold text-lg text-purple-400">Radmila de Souza Dantas</h3>
+    <p class="text-sm text-gray-400">20231144010031</p>
+  </div>
+  <div class="bg-gray-800 rounded-xl shadow-lg p-5 text-center hover:scale-105 transform transition">
+    <h3 class="font-semibold text-lg text-purple-400">Ramon Lincon Viana de Moura</h3>
+    <p class="text-sm text-gray-400">20231144010020</p>
+  </div>
+  <div class="bg-gray-800 rounded-xl shadow-lg p-5 text-center hover:scale-105 transform transition">
+    <h3 class="font-semibold text-lg text-purple-400">Vinícius Alves Moura de Oliveira</h3>
+    <p class="text-sm text-gray-400">20231144010007</p>
+  </div>
+  <div class="bg-gray-800 rounded-xl shadow-lg p-5 text-center hover:scale-105 transform transition">
+    <h3 class="font-semibold text-lg text-purple-400">Vinícius Costa e Silva Ferreira de Lima</h3>
+    <p class="text-sm text-gray-400">20231144010054</p>
+  </div>
+  <div class="bg-gray-800 rounded-xl shadow-lg p-5 text-center hover:scale-105 transform transition">
+    <h3 class="font-semibold text-lg text-purple-400">Vitória da Silva Galdino</h3>
+    <p class="text-sm text-gray-400">20221144010080</p>
+  </div>
+
+</div>
+
 </main>
 
-  <footer class="bg-white border-t py-6">
-    <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
-      <p class="text-gray-500">© 2025 3VINFOrme-se</p>
-      <div class="flex gap-4 mt-4 md:mt-0">
-        <a href="#" class="text-blue-600 hover:underline">Contato</a>
-        <a href="#" class="text-blue-600 hover:underline">Sobre</a>
-        <a href="#" class="text-blue-600 hover:underline">Redes</a>
-      </div>
+<footer class="bg-black bg-opacity-70 border-t border-gray-700 py-6 mt-20">
+  <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-gray-400">
+    <p>© 2025 3VINFOrme-se</p>
+    <div class="flex gap-6 mt-4 md:mt-0">
+      <a href="#" class="hover:text-purple-400 transition">Contato</a>
+      <a href="#" class="hover:text-purple-400 transition">Sobre</a>
+      <a href="#" class="hover:text-purple-400 transition">Redes</a>
     </div>
-  </footer>
+  </div>
+</footer>
+
 <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
 </html>
