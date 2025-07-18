@@ -4,45 +4,55 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
   <title>Materiais</title>
+  <style>
+    .gradient {
+      background: linear-gradient(90deg, #7e22ce 0%, #3b82f6 100%);
+    }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-gray-900 text-gray-200">
 
 <header class="fixed w-full z-30 top-0 left-0">
-  <div class="flex justify-between items-center px-8 py-4 bg-black bg-opacity-50 backdrop-blur-md">
-    <h1 class="text-xl font-bold">_<span class="text-purple-500">3VINFO</span>rme_se(Home)</h1>
-    <nav class="flex items-center space-x-6 text-white">
-      <a href="inicio.html" class="hover:text-blue-400">Início</a>
-      <a href="integrantes.html" class="hover:text-blue-400">Integrantes</a>
+  <div class="flex justify-between items-center px-8 py-4 bg-black bg-opacity-70 backdrop-blur-md">
+    <h1 class="text-xl font-bold">
+      _<span class="text-purple-500">3VINFO</span>rme_se(Materias)
+    </h1>
+    <nav class="flex items-center space-x-6 text-gray-200">
+      <a href="inicio.html" class="hover:text-purple-400 transition">Início</a>
+      <a href="integrantes.html" class="hover:text-purple-400 transition">Integrantes</a>
       <div class="relative">
-        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center gap-2 text-white hover:text-blue-400 transition">
+        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center gap-2 hover:text-purple-400 transition">
           Galeria
           <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"/>
           </svg>
         </button>
-        <div id="dropdownNavbar" class="z-50 hidden absolute mt-2 right-0 bg-black bg-opacity-40 backdrop-blur-md divide-y divide-white/30 rounded-lg w-52 border border-white/20">
-          <ul class="py-2 text-sm text-white" aria-labelledby="dropdownNavbarLink">
-            <li><a href="galeria-joaopessoa.html" class="block px-4 py-2 hover:bg-white/20 rounded">João Pessoa</a></li>
-            <li><a href="galeria-katu.html" class="block px-4 py-2 hover:bg-white/20 rounded">Katu</a></li>
-            <li><a href="galeria-danca.html" class="block px-4 py-2 hover:bg-white/20 rounded">Mostra de Dança</a></li>
-            <li><a href="galeria-teatro.html" class="block px-4 py-2 hover:bg-white/20 rounded">Mostra de Teatro</a></li>
-            <li><a href="galeria-salaaula.html" class="block px-4 py-2 hover:bg-white/20 rounded">Sala de Aula</a></li>
+        <div id="dropdownNavbar" class="z-50 hidden absolute mt-2 right-0 bg-black bg-opacity-70 backdrop-blur-md divide-y divide-gray-600 rounded-lg w-52 border border-gray-700">
+          <ul class="py-2 text-sm text-gray-300" aria-labelledby="dropdownNavbarLink">
+            <li><a href="galeria-joaopessoa.html" class="block px-4 py-2 hover:bg-purple-700 rounded">João Pessoa</a></li>
+            <li><a href="galeria-katu.html" class="block px-4 py-2 hover:bg-purple-700 rounded">Katu</a></li>
+            <li><a href="galeria-danca.html" class="block px-4 py-2 hover:bg-purple-700 rounded">Mostra de Dança</a></li>
+            <li><a href="galeria-teatro.html" class="block px-4 py-2 hover:bg-purple-700 rounded">Mostra de Teatro</a></li>
+            <li><a href="galeria-salaaula.html" class="block px-4 py-2 hover:bg-purple-700 rounded">Sala de Aula</a></li>
           </ul>
         </div>
       </div>
-      <a href="materiais.html" class="hover:text-blue-400">Materiais</a>
-      <a href="podio.html" class="hover:text-blue-400">Pódio</a>
-      <a href="mural.html" class="hover:text-blue-400">Mural</a>
+      <a href="materiais.html" class="hover:text-purple-400 transition">Materiais</a>
+      <a href="podio.html" class="hover:text-purple-400 transition">Pódio</a>
+      <a href="mural.html" class="hover:text-purple-400 transition">Mural</a>
     </nav>
   </div>
 </header>
 
 <main class="pt-32 px-6 max-w-7xl mx-auto">
-  <h1 class="text-3xl font-bold mb-8 text-center text-blue-600">Materiais</h1>
+  <h1 class="text-4xl font-extrabold mb-10 text-center gradient bg-clip-text text-transparent">
+    Materiais da Turma
+  </h1>
 
   <div class="mb-6 max-w-md mx-auto">
-    <select name="materias" id="materias" class="border border-gray-300 rounded px-4 py-2 w-full">
+    <select name="materias" id="materias" class="border border-gray-700 bg-gray-800 text-gray-200 rounded px-4 py-2 w-full">
       <option value="">Selecione uma disciplina</option>
       <option value="programacao_banco_dados">Programação com Acesso a Banco de Dados</option>
       <option value="quimica_1">Química I</option>
@@ -51,31 +61,31 @@
       <option value="biologia_1">Biologia I</option>
       <option value="sociologia_3">Sociologia III</option>
       <option value="filosofia_3">Filosofia III</option>
-      <option value="arquitetura_redes">Arquitetura de Redes de Computadores e Tecnologia de Implementação de Redes</option>
+      <option value="arquitetura_redes">Arquitetura de Redes</option>
       <option value="historia_1">História I</option>
-      <option value="organizacao_manutencao_computadores">Organização e Manutenção de Computadores</option>
+      <option value="organizacao_manutencao_computadores">Organização e Manutenção</option>
       <option value="portugues_3">Língua Portuguesa e Literatura III</option>
     </select>
   </div>
 
   <div class="text-center space-x-4 mb-8">
-    <button id="btn-sumario" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Sumário</button>
-    <button id="btn-apostilas" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Apostilas</button>
-    <button id="btn-quiz" class="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded">Questionário</button>
+    <button id="btn-sumario" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded transition">Sumário</button>
+    <button id="btn-apostilas" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded transition">Apostilas</button>
+    <button id="btn-quiz" class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded transition">Questionário</button>
   </div>
 
-  <section id="content-display" class="max-w-3xl mx-auto bg-white rounded shadow p-6 min-h-[200px]">
-    <!-- Aqui o sumário, apostilas ou quiz vão aparecer -->
+  <section id="content-display" class="max-w-3xl mx-auto bg-gray-800 text-gray-100 rounded-xl shadow-lg p-6 min-h-[200px]">
+    <!-- Conteúdo carregado aqui -->
   </section>
 </main>
 
-<footer class="bg-white border-t py-6 mt-10">
-  <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
-    <p class="text-gray-500">© 2025 Guia da Turma</p>
-    <div class="flex gap-4 mt-4 md:mt-0">
-      <a href="#" class="text-blue-600 hover:underline">Contato</a>
-      <a href="#" class="text-blue-600 hover:underline">Sobre</a>
-      <a href="#" class="text-blue-600 hover:underline">Redes</a>
+<footer class="bg-black bg-opacity-70 border-t border-gray-700 py-6 mt-20">
+  <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-gray-400">
+    <p>© 2025 3VINFOrme-se</p>
+    <div class="flex gap-6 mt-4 md:mt-0">
+      <a href="#" class="hover:text-purple-400 transition">Contato</a>
+      <a href="#" class="hover:text-purple-400 transition">Sobre</a>
+      <a href="#" class="hover:text-purple-400 transition">Redes</a>
     </div>
   </div>
 </footer>
@@ -250,6 +260,5 @@
       <ol class="list-decimal ml-6">${questionsList}</ol>`;
   });
 </script>
-
 </body>
 </html>
