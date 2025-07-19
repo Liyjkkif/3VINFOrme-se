@@ -2,7 +2,7 @@
 session_start();
 
 // Conexão com o banco
-$conn = new mysqli("localhost", "root", "", "my_project_db");
+$conn = new mysqli("localhost", "root", "", "turma_db");
 if ($conn->connect_error) {
     die("Erro de conexão: " . $conn->connect_error);
 }
