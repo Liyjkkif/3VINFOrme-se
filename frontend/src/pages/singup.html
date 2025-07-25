@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .gradient {
+      background: linear-gradient(90deg, #7e22ce 0%, #3b82f6 100%);
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+  <form action="../../../backend/singup.php" method="POST" class="">
+    <div class="flex items-center justify-center min-h-screen bg-gray-900">
+      <div class="relative flex flex-col m-6 space-y-8 bg-gray-800 shadow-2xl rounded-2xl md:flex-row md:space-y-0">
+        <div class="flex flex-col justify-center p-8 md:p-14">
+          <span class="text-4xl font-extrabold mb-10 text-center gradient bg-clip-text text-transparent p-4">Cadastre-se</span>
+          
+          <div class="py-4">
+            <label class="mb-2 block text-md text-white" for="matricula">Matrícula</label>
+            <input 
+              type="text" 
+              id="matricula"
+              name="matricula"
+              class="text-white w-full p-2 border bg-gray-900 border-purple-600 rounded-md placeholder:font-light placeholder:text-gray-400"
+              placeholder="Digite sua matrícula"
+              required
+              autocomplete="username"
+            />
+          </div>
+
+          <div class="py-4">
+            <label class="mb-2 block text-md text-white" for="email">E-mail Escolar</label>
+            <input 
+              type="email" 
+              id="email"
+              name="email"
+              class="text-white w-full p-2 border bg-gray-900 border-purple-600 rounded-md placeholder:font-light placeholder:text-gray-400"
+              placeholder="Digite seu e-mail escolar"
+              required
+              autocomplete="email"
+            />
+          </div>
+
+          <div class="py-4">
+            <label class="mb-2 block text-md text-white" for="password">Senha</label>
+            <input 
+              type="password"
+              id="password"
+              name="password"
+              class="text-white w-full p-2 border bg-gray-900 border-purple-600 rounded-md placeholder:font-light placeholder:text-gray-400"
+              placeholder="Digite sua senha"
+              required
+              autocomplete="new-password"
+            />
+          </div>
+
+          <div class="py-4">
+            <label class="mb-2 block text-md text-white" for="confirm_password">Confirmar Senha</label>
+            <input 
+              type="password"
+              id="confirm_password"
+              name="confirm_password"
+              class="text-white w-full p-2 border bg-gray-900 border-purple-600 rounded-md placeholder:font-light placeholder:text-gray-400"
+              placeholder="Confirme sua senha"
+              required
+              autocomplete="new-password"
+            />
+          </div>
+
+          <div class="flex justify-between items-center py-4 text-gray-200">
+            <label class="flex items-center text-md" for="ch">
+              <input type="checkbox" name="ch" id="ch" class="mr-2" />
+              Permanecer conectado por 30 dias
+            </label>
+          </div>
+
+          <button type="submit" class="w-full bg-gray-900 border-black text-white p-2 rounded-lg mb-4 hover:bg-purple-800 hover:border-purple-800">
+            Cadastrar
+          </button>
+
+          <div class="text-center text-gray-400 p-4">
+            Já tem uma conta? 
+            <a href="index.html" class="font-bold text-white underline cursor-pointer">Faça login</a>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </form>
+</body>
+</html>

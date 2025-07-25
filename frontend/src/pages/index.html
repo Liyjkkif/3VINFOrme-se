@@ -20,13 +20,27 @@
           <span class="text-4xl font-extrabold mb-10 text-center gradient bg-clip-text text-transparent p-4">Login</span>
           
           <div class="py-4">
-            <label class="mb-2 block text-md text-white" for="email">E-mail</label>
+            <label class="mb-2 block text-md text-white" for="matricula">Matrícula</label>
             <input 
               type="text" 
+              id="matricula"
+              name="matricula"
+              class="text-white w-full p-2 border bg-gray-900 border-purple-600 rounded-md placeholder:font-light placeholder:text-gray-400"
+              placeholder="Digite sua matrícula"
+              autocomplete="username"
+              required
+            />
+          </div>
+
+          <div class="py-4">
+            <label class="mb-2 block text-md text-white" for="email">E-mail Escolar</label>
+            <input 
+              type="email" 
               id="email"
               name="email"
-              class="w-full p-2 border bg-gray-900 border-purple-600 rounded-md placeholder:font-light placeholder:text-gray-400"
-              placeholder="Digite seu e-mail"
+              class="text-white w-full p-2 border bg-gray-900 border-purple-600 rounded-md placeholder:font-light placeholder:text-gray-400"
+              placeholder="Digite seu e-mail escolar"
+              autocomplete="email"
               required
             />
           </div>
@@ -37,14 +51,15 @@
               type="password"
               id="password"
               name="password"
-              class="w-full p-2 border bg-gray-900 border-purple-600 rounded-md placeholder:font-light placeholder:text-gray-400"
+              class="text-white w-full p-2 border bg-gray-900 border-purple-600 rounded-md placeholder:font-light placeholder:text-gray-400"
               placeholder="Digite sua senha"
+              autocomplete="current-password"
               required
             />
           </div>
 
           <div class="flex justify-between items-center py-4 text-gray-200">
-            <label class="flex items-center text-md">
+            <label class="flex items-center text-md" for="ch">
               <input type="checkbox" name="ch" id="ch" class="mr-2" />
               Permanecer conectado por 30 dias
             </label>
@@ -55,8 +70,8 @@
           </button>
 
           <div class="text-center text-gray-400 p-4">
-            Não tem uma conta?
-            <span class="font-bold text-white cursor-pointer">Cadastre-se</span>
+            Não tem uma conta? 
+            <a href="singup.html" class="font-bold text-white underline cursor-pointer">Cadastre-se</a>
           </div>
         </div>
       </div>
