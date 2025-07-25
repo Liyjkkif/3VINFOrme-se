@@ -3,6 +3,16 @@ USE turma_db;
 
 CREATE TABLE IF NOT EXISTS users (
   id INT AUTO_INCREMENT PRIMARY KEY,
-  username VARCHAR(255) NOT NULL UNIQUE,
-  password VARCHAR(255) NOT NULL
+  matricula VARCHAR(100) NOT NULL UNIQUE,
+  email VARCHAR(255) NOT NULL UNIQUE,
+  password VARCHAR(255) NOT NULL,
+  role ENUM('representante', 'aluno') DEFAULT 'aluno'
+);
+
+CREATE TABLE IF NOT EXISTS avisos (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  conteudo TEXT NOT NULL,
+  data_inicio DATE,
+  data_final DATE,
+  criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
